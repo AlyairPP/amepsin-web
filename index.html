@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#1e3a5f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --navy:#1e3a5f; --navy-dark:#15293f; --blue:#3a6ea5; --blue-light:#6ba3d4;
@@ -24,7 +24,7 @@
   a{color:var(--blue);text-decoration:none;transition:color .2s}
   a:hover{color:var(--navy)}
   .container{max-width:1180px;margin:0 auto;padding:0 24px}
-  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--navy);line-height:1.2;font-weight:700}
+  h1,h2,h3{font-family:'Lora',Georgia,serif;color:var(--navy);line-height:1.2;font-weight:700}
   h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin-bottom:.8rem}
   h3{font-size:1.25rem;margin-bottom:.5rem}
   .lead{font-size:1.15rem;color:var(--text-soft);max-width:720px;margin:0 auto 2.5rem;text-align:center}
@@ -46,7 +46,7 @@
   .nav-cta::after{display:none!important}
   .menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px;font-size:1.4rem;color:var(--navy)}
 
-  .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,rgba(30,58,95,.86) 0%,rgba(30,58,95,.6) 60%,rgba(30,58,95,.3) 100%),url('img/portada/portada.jpg') center/cover no-repeat;color:#fff;padding-top:80px}
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,rgba(8,22,52,.94) 0%,rgba(13,35,75,.9) 50%,rgba(20,48,98,.86) 100%),url('img/portada/portada.jpg') center/cover no-repeat;color:#fff;padding-top:80px}
   .hero-content{max-width:780px}
   .hero-eyebrow{display:inline-block;padding:6px 14px;background:rgba(255,255,255,.16);backdrop-filter:blur(8px);border-radius:30px;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:1.5rem;font-weight:500}
   .hero h1{color:#fff;font-size:clamp(2.2rem,5vw,4rem);margin-bottom:1.25rem;line-height:1.1}
@@ -70,7 +70,7 @@
   .about-image img{width:100%;height:100%;object-fit:cover}
   .about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:2rem}
   .stat{text-align:center;padding:18px 8px;background:var(--bg-alt);border-radius:var(--radius)}
-  .stat-num{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy);font-weight:700;line-height:1.1}
+  .stat-num{font-family:'Lora',Georgia,serif;font-size:1.6rem;color:var(--navy);font-weight:700;line-height:1.1}
   .stat-label{font-size:.78rem;color:var(--text-soft);margin-top:6px;line-height:1.4}
 
   .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:2.5rem}
@@ -82,7 +82,7 @@
   .service-card h3{color:var(--navy);margin-bottom:10px}
   .service-card p{color:var(--text-soft);font-size:.94rem;line-height:1.65;margin-bottom:18px}
   .service-price{display:flex;align-items:baseline;gap:6px;padding-top:14px;border-top:1px solid rgba(30,58,95,.08)}
-  .service-price strong{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--navy)}
+  .service-price strong{font-family:'Lora',Georgia,serif;font-size:1.5rem;color:var(--navy)}
   .service-price span{font-size:.85rem;color:var(--text-soft)}
 
   .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:2.5rem}
@@ -139,10 +139,12 @@
   .contact-info{display:flex;flex-direction:column;gap:22px}
   .contact-row{display:flex;align-items:flex-start;gap:18px;padding:18px;background:rgba(255,255,255,.06);border-radius:var(--radius);transition:all .25s}
   .contact-row:hover{background:rgba(255,255,255,.1);transform:translateX(4px)}
-  .contact-icon{width:48px;height:48px;border-radius:50%;background:var(--blue);display:grid;place-items:center;flex-shrink:0;color:#fff}
-  .contact-icon svg{display:block}
-  .contact-icon-wa{background:#25d366;box-shadow:0 4px 12px rgba(37,211,102,.35)}
-  .contact-row:hover .contact-icon-wa{background:#1ebe5b}
+  .contact-icon{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#5fb3ff 0%,#1e88e5 50%,#0d5fb8 100%);display:grid;place-items:center;flex-shrink:0;color:#fff;box-shadow:0 4px 14px rgba(30,136,229,.5),inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 6px rgba(0,0,0,.15);position:relative;overflow:hidden;transition:filter .2s,transform .2s}
+  .contact-icon::before{content:"";position:absolute;top:3px;left:8px;right:8px;height:38%;background:linear-gradient(180deg,rgba(255,255,255,.45),transparent);border-radius:50%;pointer-events:none}
+  .contact-icon svg{display:block;position:relative;z-index:1}
+  .contact-row:hover .contact-icon{filter:brightness(1.08);transform:translateY(-1px)}
+  .contact-icon-wa{background:linear-gradient(135deg,#4ce28a 0%,#25d366 50%,#1ba94a 100%);box-shadow:0 4px 14px rgba(37,211,102,.5),inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 6px rgba(0,0,0,.15)}
+  .contact-icon-call{background:linear-gradient(135deg,#5fb3ff 0%,#1e88e5 50%,#0d5fb8 100%);box-shadow:0 4px 14px rgba(30,136,229,.5),inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 6px rgba(0,0,0,.15)}
   .contact-row strong{display:block;color:#fff;margin-bottom:4px;font-size:.95rem;font-weight:600}
   .contact-row a, .contact-row span{color:rgba(255,255,255,.85);font-size:.92rem;line-height:1.5;text-decoration:none}
   .contact-row a:hover{color:#fff;text-decoration:underline}
@@ -156,16 +158,17 @@
   footer a{color:rgba(255,255,255,.9)}
   footer p{margin-bottom:6px}
 
-  .floating-actions{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:14px;z-index:9999;align-items:flex-end}
-  .float-btn{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.5rem;transition:all .25s;position:relative}
-  .float-btn:hover{transform:translateY(-3px) scale(1.06);color:#fff}
-  .float-whatsapp,.float-call{background:#25d366;box-shadow:0 10px 28px rgba(37,211,102,.4)}
-  .float-whatsapp::before,.float-call::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25d366;z-index:-1;animation:wa-pulse 2.2s ease-out infinite}
-  .float-call::before{animation-delay:1.1s}
-  .float-whatsapp:hover,.float-call:hover{background:#1ebe5b}
-  .float-label{position:absolute;right:74px;top:50%;transform:translateY(-50%);background:#1a2332;color:#fff;padding:8px 14px;border-radius:20px;font-size:.82rem;font-weight:500;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;box-shadow:0 6px 16px rgba(0,0,0,.18)}
-  .float-label::after{content:"";position:absolute;right:-5px;top:50%;transform:translateY(-50%);width:0;height:0;border-style:solid;border-width:5px 0 5px 6px;border-color:transparent transparent transparent #1a2332}
-  .float-btn:hover .float-label{opacity:1;transform:translateY(-50%) translateX(-4px)}
+  .floating-actions{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:18px;z-index:9999;align-items:center}
+  .float-item{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .float-btn{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.5rem;transition:all .25s;position:relative;overflow:visible}
+  .float-btn::after{content:"";position:absolute;top:4px;left:10px;right:10px;height:40%;background:linear-gradient(180deg,rgba(255,255,255,.45),transparent);border-radius:50%;pointer-events:none}
+  .float-btn svg{position:relative;z-index:2}
+  .float-btn:hover{transform:translateY(-3px) scale(1.06);color:#fff;filter:brightness(1.06)}
+  .float-whatsapp{background:linear-gradient(135deg,#4ce28a 0%,#25d366 50%,#1ba94a 100%);box-shadow:0 10px 28px rgba(37,211,102,.45),inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 8px rgba(0,0,0,.18)}
+  .float-call{background:linear-gradient(135deg,#5fb3ff 0%,#1e88e5 50%,#0d5fb8 100%);box-shadow:0 10px 28px rgba(30,136,229,.45),inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 8px rgba(0,0,0,.18)}
+  .float-whatsapp::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25d366;z-index:-1;animation:wa-pulse 2.2s ease-out infinite}
+  .float-call::before{content:"";position:absolute;inset:0;border-radius:50%;background:#1e88e5;z-index:-1;animation:wa-pulse 2.2s ease-out infinite;animation-delay:1.1s}
+  .float-name{font-size:.62rem;font-weight:700;color:#fff;background:rgba(26,35,50,.88);padding:3px 9px;border-radius:10px;text-transform:uppercase;letter-spacing:.7px;white-space:nowrap;backdrop-filter:blur(6px);box-shadow:0 4px 10px rgba(0,0,0,.18)}
   @keyframes wa-pulse{0%{transform:scale(1);opacity:.65}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
 
   @media (max-width:840px){
@@ -181,7 +184,6 @@
     section{padding:3.5rem 0}
     .floating-actions{bottom:16px;right:16px;gap:10px}
     .float-btn{width:56px;height:56px;font-size:1.3rem}
-    .float-label{display:none}
     .hero-actions{flex-direction:column;align-items:stretch}
     .btn{justify-content:center}
   }
@@ -258,7 +260,7 @@
         <div class="service-icon">👤</div>
         <h3>Psicoterapia adultos</h3>
         <p>Para adultos que buscan trabajar ansiedad, depresión, estrés, autoestima, experiencias traumáticas, problemas de adicciones, crisis personales, duelo o patrones de pensamiento que desean cambiar.</p>
-        <div class="service-price"><strong>$300</strong><span>MXN / sesión</span></div>
+        <div class="service-price"><strong>$350</strong><span>MXN / sesión</span></div>
       </div>
 
       <div class="service-card">
@@ -408,8 +410,8 @@
         </a>
 
         <a href="tel:+522228783184" class="contact-row">
-          <div class="contact-icon contact-icon-wa">
-            <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
           </div>
           <div><strong>Teléfono</strong><span>222 878 3184</span></div>
         </a>
@@ -472,14 +474,18 @@
 </footer>
 
 <div class="floating-actions">
-  <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20AMEPSIN" target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chatear por WhatsApp">
-    <span class="float-label">Escríbenos por WhatsApp</span>
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="#fff"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
-  </a>
-  <a href="tel:+522228783184" class="float-btn float-call" aria-label="Llamar por teléfono">
-    <span class="float-label">Llamar ahora</span>
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="#fff"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
-  </a>
+  <div class="float-item">
+    <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20AMEPSIN" target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chatear por WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="#fff"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+    </a>
+    <span class="float-name">WhatsApp</span>
+  </div>
+  <div class="float-item">
+    <a href="tel:+522228783184" class="float-btn float-call" aria-label="Llamar por teléfono">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+    </a>
+    <span class="float-name">Llamadas</span>
+  </div>
 </div>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-label="Vista ampliada">
