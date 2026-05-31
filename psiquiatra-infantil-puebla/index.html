@@ -70,7 +70,8 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,2
 .hero{background:linear-gradient(150deg,var(--navy-deep) 0%,var(--navy) 55%,#1d5490 100%);min-height:100vh;display:flex;align-items:center;padding-top:80px;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 50%,rgba(42,143,124,.18) 0%,transparent 60%)}
 .hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--teal) 0%,var(--teal-mid) 50%,var(--gold) 100%)}
-.hero-inner{display:grid;grid-template-columns:1fr;gap:64px;align-items:center;position:relative;z-index:1;padding:4rem 0;max-width:740px}
+.hero-inner{display:grid;grid-template-columns:1fr 380px;gap:48px;align-items:center;position:relative;z-index:1;padding:4rem 0}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-illus-right{display:none}}
 .hero-label{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(42,143,124,.25);border:1px solid rgba(42,143,124,.4);border-radius:30px;font-size:.8rem;font-weight:500;color:#7dd8cd;letter-spacing:1px;text-transform:uppercase;margin-bottom:1.5rem}
 .hero h1{color:#fff;margin-bottom:1.2rem}
 .hero-sub{font-size:1.05rem;color:rgba(255,255,255,.82);line-height:1.7;margin-bottom:2rem;max-width:520px}
@@ -268,7 +269,7 @@ footer p{margin-bottom:4px}
       <div class="logo-badge">A</div>
       <div class="logo-text"><span>AMEPSIN</span><small>Salud Mental</small></div>
     </a>
-    <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="nav-cta">
+    <a href="https://wa.me/522223496269?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="nav-cta">
       <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
       Agendar consulta
     </a>
@@ -302,7 +303,7 @@ footer p{margin-bottom:4px}
           </div>
         </div>
 
-        <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa%20para%20mi%20hijo" target="_blank" rel="noopener" class="hero-cta">
+        <a href="https://wa.me/522223496269?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa%20para%20mi%20hijo" target="_blank" rel="noopener" class="hero-cta">
           <svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
           Agendar consulta por WhatsApp
         </a>
@@ -313,6 +314,118 @@ footer p{margin-bottom:4px}
           <span class="hero-trust-dot"></span>
           <span>Presencial y en línea</span>
         </div>
+      </div>
+
+      <!-- Ilustración hero -->
+      <div class="hero-illus-right">
+        <svg width="360" height="420" viewBox="0 0 360 420" fill="none">
+          <circle cx="180" cy="210" r="160" fill="rgba(255,255,255,.05)"/>
+          <circle cx="180" cy="210" r="120" fill="rgba(255,255,255,.04)"/>
+
+          <!-- escritorio médico -->
+          <rect x="60" y="280" width="240" height="16" rx="8" fill="rgba(42,143,124,.3)" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+          <rect x="62" y="296" width="10" height="60" rx="5" fill="rgba(42,143,124,.2)"/>
+          <rect x="288" y="296" width="10" height="60" rx="5" fill="rgba(42,143,124,.2)"/>
+          <!-- objetos escritorio -->
+          <rect x="220" y="256" width="28" height="24" rx="5" fill="rgba(255,255,255,.15)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+          <line x1="226" y1="263" x2="242" y2="263" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+          <line x1="226" y1="268" x2="242" y2="268" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+          <line x1="226" y1="273" x2="238" y2="273" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+          <!-- lámpara escritorio -->
+          <rect x="88" y="240" width="6" height="40" rx="3" fill="rgba(255,255,255,.2)"/>
+          <ellipse cx="91" cy="238" rx="18" ry="10" fill="rgba(212,168,67,.35)" stroke="rgba(212,168,67,.5)" stroke-width="1"/>
+
+          <!-- DOCTORA (izq) -->
+          <!-- bata médica -->
+          <rect x="72" y="198" width="56" height="84" rx="16" fill="rgba(255,255,255,.18)" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+          <!-- línea bata centro -->
+          <line x1="100" y1="198" x2="100" y2="282" stroke="rgba(255,255,255,.15)" stroke-width="2"/>
+          <!-- estetoscopio -->
+          <path d="M80 220 Q68 234 72 252" stroke="rgba(42,143,124,.8)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="72" cy="254" r="5" fill="rgba(42,143,124,.8)" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+          <!-- bolsillo con lapicero -->
+          <rect x="106" y="222" width="16" height="20" rx="3" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+          <rect x="110" y="218" width="3" height="8" rx="1" fill="rgba(42,143,124,.8)"/>
+          <!-- brazo señalando niño -->
+          <path d="M128 220 Q148 214 162 222" stroke="rgba(255,255,255,.3)" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="163" cy="223" r="7" fill="#d4956a"/>
+          <!-- cuello -->
+          <rect x="90" y="188" width="18" height="14" rx="6" fill="#d4956a"/>
+          <!-- cabeza doctora -->
+          <ellipse cx="99" cy="164" rx="28" ry="30" fill="#d4956a" stroke="#b8734a" stroke-width="1.5"/>
+          <!-- pelo doctora recogido -->
+          <ellipse cx="99" cy="137" rx="28" ry="17" fill="#3d2314"/>
+          <ellipse cx="75" cy="158" rx="10" ry="20" fill="#3d2314"/>
+          <ellipse cx="123" cy="158" rx="10" ry="20" fill="#3d2314"/>
+          <!-- moño elegante -->
+          <ellipse cx="99" cy="133" rx="14" ry="8" fill="#3d2314"/>
+          <circle cx="99" cy="133" r="5" fill="#2a8f7c"/>
+          <!-- ojos doctora cálidos -->
+          <ellipse cx="90" cy="162" rx="4.5" ry="5.5" fill="#3d2314"/>
+          <ellipse cx="108" cy="162" rx="4.5" ry="5.5" fill="#3d2314"/>
+          <circle cx="91.5" cy="160.5" r="1.5" fill="white"/>
+          <circle cx="109.5" cy="160.5" r="1.5" fill="white"/>
+          <!-- gafas -->
+          <rect x="83" y="156" width="14" height="12" rx="5" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
+          <rect x="101" y="156" width="14" height="12" rx="5" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
+          <line x1="97" y1="162" x2="101" y2="162" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
+          <!-- sonrisa doctora -->
+          <path d="M88 175 Q99 183 110 175" stroke="#b8734a" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="85" cy="173" rx="6" ry="3.5" fill="#f7a8b8" opacity="0.5"/>
+          <ellipse cx="113" cy="173" rx="6" ry="3.5" fill="#f7a8b8" opacity="0.5"/>
+
+          <!-- NIÑO (der, sentado en silla) -->
+          <!-- sillita -->
+          <rect x="196" y="256" width="80" height="24" rx="8" fill="rgba(42,143,124,.25)" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+          <rect x="198" y="272" width="8" height="28" rx="4" fill="rgba(42,143,124,.2)"/>
+          <rect x="266" y="272" width="8" height="28" rx="4" fill="rgba(42,143,124,.2)"/>
+          <rect x="190" y="242" width="96" height="20" rx="8" fill="rgba(42,143,124,.3)" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+          <!-- cuerpo niño -->
+          <rect x="210" y="200" width="52" height="46" rx="14" fill="rgba(58,171,149,.4)" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+          <!-- piernas -->
+          <path d="M218 246 Q212 266 210 300" stroke="rgba(58,171,149,.4)" stroke-width="10" stroke-linecap="round"/>
+          <path d="M254 246 Q260 266 262 300" stroke="rgba(58,171,149,.4)" stroke-width="10" stroke-linecap="round"/>
+          <!-- brazo niño hacia doctora -->
+          <path d="M210 218 Q188 212 176 218" stroke="rgba(58,171,149,.4)" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="175" cy="219" r="6" fill="#f5c5a3"/>
+          <!-- cuello niño -->
+          <rect x="228" y="190" width="16" height="14" rx="5" fill="#f5c5a3"/>
+          <!-- cabeza niño -->
+          <ellipse cx="236" cy="166" rx="28" ry="30" fill="#f5c5a3" stroke="#e8a882" stroke-width="1.5"/>
+          <!-- pelo niño -->
+          <ellipse cx="236" cy="139" rx="28" ry="17" fill="#8B5E3C"/>
+          <ellipse cx="212" cy="162" rx="10" ry="20" fill="#8B5E3C"/>
+          <ellipse cx="260" cy="162" rx="10" ry="20" fill="#8B5E3C"/>
+          <!-- ojos niño -->
+          <ellipse cx="227" cy="164" rx="4.5" ry="5.5" fill="#5c3d1e"/>
+          <ellipse cx="245" cy="164" rx="4.5" ry="5.5" fill="#5c3d1e"/>
+          <circle cx="228.5" cy="162.5" r="1.5" fill="white"/>
+          <circle cx="246.5" cy="162.5" r="1.5" fill="white"/>
+          <!-- expresión tranquila niño -->
+          <path d="M225 177 Q236 184 247 177" stroke="#e8a882" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="223" cy="175" rx="5" ry="3" fill="#f7a8b8" opacity="0.5"/>
+          <ellipse cx="249" cy="175" rx="5" ry="3" fill="#f7a8b8" opacity="0.5"/>
+
+          <!-- burbuja niño -->
+          <rect x="262" y="110" width="90" height="40" rx="10" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+          <path d="M270 150 L266 162 L280 150" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+          <text x="307" y="128" font-size="10" fill="rgba(255,255,255,.8)" font-family="sans-serif" text-anchor="middle">¿Necesito</text>
+          <text x="307" y="142" font-size="10" fill="rgba(255,255,255,.8)" font-family="sans-serif" text-anchor="middle">medicamento?</text>
+
+          <!-- burbuja doctora -->
+          <rect x="14" y="106" width="100" height="40" rx="10" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+          <path d="M104 146 L108 158 L94 146" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+          <text x="64" y="124" font-size="10" fill="rgba(255,255,255,.8)" font-family="sans-serif" text-anchor="middle">Vamos a valorar</text>
+          <text x="64" y="138" font-size="10" fill="rgba(255,255,255,.8)" font-family="sans-serif" text-anchor="middle">juntos el caso.</text>
+
+          <!-- cruz médica flotante -->
+          <rect x="302" y="60" width="26" height="8" rx="4" fill="rgba(42,143,124,.6)"/>
+          <rect x="309" y="53" width="8" height="22" rx="4" fill="rgba(42,143,124,.6)"/>
+          <!-- estrella -->
+          <path d="M38 72 L40 64 L42 72 L50 72 L44 77 L46 85 L40 80 L34 85 L36 77 L30 72 Z" fill="rgba(212,168,67,.5)"/>
+          <!-- corazón -->
+          <path d="M320 360 Q323 354 328 360 Q333 354 336 360 Q336 367 328 373 Q320 367 320 360Z" fill="rgba(247,168,184,.6)"/>
+        </svg>
       </div>
 
 
@@ -343,7 +456,7 @@ footer p{margin-bottom:4px}
           <div style="display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--text-soft)"><span style="width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0"></span><span><strong style="color:var(--navy)">8070597</strong> — Subespecialidad en Paidopsiquiatría</span></div>
         </div>
         <div style="margin-top:1.8rem">
-          <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa%20con%20la%20Dra.%20Tlapa" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:.93rem;padding:13px 24px">
+          <a href="https://wa.me/522223496269?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa%20con%20la%20Dra.%20Tlapa" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:.93rem;padding:13px 24px">
             <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
             Agendar consulta con la Dra. Tlapa
           </a>
@@ -361,14 +474,196 @@ footer p{margin-bottom:4px}
     <p style="text-align:center;color:var(--text-soft);max-width:640px;margin:.5rem auto 0;font-size:1rem">La paidopsiquiatría puede ayudar cuando los síntomas son intensos, persistentes o generan deterioro importante en casa, escuela o relaciones.</p>
 
     <div class="symptoms-grid" style="margin-top:2.5rem">
-      <div class="symptom-card"><div class="symptom-icon">📚</div><div><h3>TDAH y atención</h3><p>Dificultad importante para concentrarse, impulsividad, inquietud o problemas escolares persistentes.</p></div></div>
-      <div class="symptom-card"><div class="symptom-icon">😟</div><div><h3>Ansiedad y pánico</h3><p>Crisis severas, evitación importante, ansiedad escolar, social o miedos que interfieren con la vida diaria.</p></div></div>
-      <div class="symptom-card"><div class="symptom-icon">🌧️</div><div><h3>Depresión e irritabilidad</h3><p>Tristeza intensa, aislamiento, baja energía, cambios en sueño o apetito, o deterioro en la vida diaria.</p></div></div>
-      <div class="symptom-card"><div class="symptom-icon">😤</div><div><h3>Conducta y agresividad</h3><p>Explosiones de enojo, agresividad, desafío grave, impulsividad o conflictos frecuentes difíciles de manejar.</p></div></div>
-      <div class="symptom-card"><div class="symptom-icon">🔄</div><div><h3>TOC y pensamientos repetitivos</h3><p>Pensamientos intrusivos, rituales, compulsiones o miedo excesivo que afectan la rutina del menor.</p></div></div>
-      <div class="symptom-card"><div class="symptom-icon">🌈</div><div><h3>Autismo y neurodesarrollo</h3><p>Sospecha de dificultades en comunicación, interacción social, flexibilidad, conducta o sensibilidad sensorial.</p></div></div>
-      <div class="symptom-card"><div class="symptom-icon">🆘</div><div><h3>Riesgo emocional</h3><p>Autolesiones, ideas de muerte, conductas de riesgo o señales de alarma que requieren atención especializada.</p></div></div>
-      <div class="symptom-card"><div class="symptom-icon">🔍</div><div><h3>Terapia insuficiente</h3><p>Casos donde la psicoterapia sola no ha sido suficiente o se requiere una valoración médica complementaria.</p></div></div>
+      <div class="symptom-card">
+        <div class="symptom-icon" style="background:transparent;width:50px;height:50px">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="23" fill="#e6f5f2"/>
+            <!-- niño con libro -->
+            <rect x="14" y="28" width="16" height="14" rx="5" fill="#3aab95" stroke="#2a8f7c" stroke-width="1"/>
+            <rect x="30" y="32" width="10" height="16" rx="3" fill="white" stroke="#2a8f7c" stroke-width="1"/>
+            <line x1="32" y1="36" x2="38" y2="36" stroke="#2a8f7c" stroke-width="0.8"/>
+            <line x1="32" y1="39" x2="38" y2="39" stroke="#2a8f7c" stroke-width="0.8"/>
+            <rect x="19" y="22" width="6" height="7" rx="2" fill="#d4956a"/>
+            <ellipse cx="22" cy="16" rx="8" ry="9" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+            <ellipse cx="22" cy="8" rx="8" ry="5" fill="#8B5E3C"/>
+            <ellipse cx="15" cy="13" rx="3" ry="6" fill="#8B5E3C"/>
+            <ellipse cx="29" cy="13" rx="3" ry="6" fill="#8B5E3C"/>
+            <ellipse cx="19" cy="15" rx="1.5" ry="2" fill="#5c3d1e"/>
+            <ellipse cx="25" cy="15" rx="1.5" ry="2" fill="#5c3d1e"/>
+            <path d="M18 21 Q22 24 26 21" stroke="#b8734a" stroke-width="1" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div><h3>TDAH y atención</h3><p>Dificultad importante para concentrarse, impulsividad, inquietud o problemas escolares persistentes.</p></div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon" style="background:transparent;width:50px;height:50px">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="23" fill="#e6f5f2"/>
+            <!-- niño con nube de ansiedad -->
+            <ellipse cx="32" cy="14" rx="10" ry="7" fill="#CECBF6" stroke="#7b7ecb" stroke-width="1"/>
+            <ellipse cx="24" cy="18" rx="7" ry="5" fill="#CECBF6" stroke="#7b7ecb" stroke-width="1"/>
+            <ellipse cx="38" cy="18" rx="7" ry="5" fill="#CECBF6" stroke="#7b7ecb" stroke-width="1"/>
+            <rect x="14" y="28" width="18" height="16" rx="6" fill="#3aab95" stroke="#2a8f7c" stroke-width="1"/>
+            <rect x="19" y="22" width="7" height="8" rx="2" fill="#f5c5a3"/>
+            <ellipse cx="22" cy="16" rx="8" ry="9" fill="#f5c5a3" stroke="#e8a882" stroke-width="1"/>
+            <ellipse cx="22" cy="8" rx="8" ry="5" fill="#c9956a"/>
+            <ellipse cx="15" cy="13" rx="3" ry="6" fill="#c9956a"/>
+            <!-- cejas preocupadas -->
+            <path d="M17 14 Q20 11 23 14" stroke="#8B5E3C" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <ellipse cx="18" cy="15" rx="1.5" ry="2" fill="#5c3d1e"/>
+            <ellipse cx="26" cy="15" rx="1.5" ry="2" fill="#5c3d1e"/>
+            <path d="M17 21 Q22 18 27 21" stroke="#e8a882" stroke-width="1" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div><h3>Ansiedad y pánico</h3><p>Crisis severas, evitación importante, ansiedad escolar, social o miedos que interfieren con la vida diaria.</p></div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon" style="background:transparent;width:50px;height:50px">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="23" fill="#e6f5f2"/>
+            <!-- niño triste -->
+            <rect x="14" y="30" width="18" height="14" rx="5" fill="#6ba3d4" stroke="#3a6ea5" stroke-width="1"/>
+            <rect x="19" y="24" width="8" height="8" rx="2" fill="#f5c5a3"/>
+            <ellipse cx="23" cy="17" rx="9" ry="10" fill="#f5c5a3" stroke="#e8a882" stroke-width="1"/>
+            <ellipse cx="23" cy="8" rx="9" ry="6" fill="#6b4226"/>
+            <ellipse cx="15" cy="14" rx="3" ry="7" fill="#6b4226"/>
+            <ellipse cx="31" cy="14" rx="3" ry="7" fill="#6b4226"/>
+            <!-- cejas tristes -->
+            <path d="M17 14 Q20 17 23 14" stroke="#5c3d1e" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <path d="M23 14 Q26 17 29 14" stroke="#5c3d1e" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <ellipse cx="18" cy="16" rx="1.8" ry="2.2" fill="#5c3d1e"/>
+            <ellipse cx="28" cy="16" rx="1.8" ry="2.2" fill="#5c3d1e"/>
+            <!-- boca triste -->
+            <path d="M17 23 Q23 19 29 23" stroke="#e8a882" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- lágrima -->
+            <ellipse cx="16" cy="20" rx="1.5" ry="2.5" fill="#6ba3d4" opacity="0.7"/>
+          </svg>
+        </div>
+        <div><h3>Depresión e irritabilidad</h3><p>Tristeza intensa, aislamiento, baja energía, cambios en sueño o apetito, o deterioro en la vida diaria.</p></div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon" style="background:transparent;width:50px;height:50px">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="23" fill="#e6f5f2"/>
+            <!-- niño enojado -->
+            <rect x="14" y="30" width="18" height="14" rx="5" fill="#EF9F27" stroke="#854F0B" stroke-width="1"/>
+            <rect x="19" y="24" width="8" height="8" rx="2" fill="#d4956a"/>
+            <ellipse cx="23" cy="17" rx="9" ry="10" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+            <ellipse cx="23" cy="8" rx="9" ry="6" fill="#4a2c17"/>
+            <ellipse cx="15" cy="14" rx="3" ry="7" fill="#4a2c17"/>
+            <ellipse cx="31" cy="14" rx="3" ry="7" fill="#4a2c17"/>
+            <!-- cejas enojadas en V -->
+            <path d="M15 13 Q18 10 21 13" stroke="#4a2c17" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <path d="M25 13 Q28 10 31 13" stroke="#4a2c17" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <ellipse cx="18" cy="15" rx="2" ry="2.5" fill="#4a2c17"/>
+            <ellipse cx="28" cy="15" rx="2" ry="2.5" fill="#4a2c17"/>
+            <!-- boca enojada -->
+            <path d="M17 23 Q23 27 29 23" stroke="#b8734a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- rayos de enojo -->
+            <line x1="34" y1="10" x2="38" y2="7" stroke="#EF9F27" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="36" y1="14" x2="41" y2="14" stroke="#EF9F27" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="34" y1="18" x2="38" y2="21" stroke="#EF9F27" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div><h3>Conducta y agresividad</h3><p>Explosiones de enojo, agresividad, desafío grave, impulsividad o conflictos frecuentes difíciles de manejar.</p></div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon" style="background:transparent;width:50px;height:50px">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="23" fill="#e6f5f2"/>
+            <!-- niño con pensamientos en loop -->
+            <rect x="14" y="30" width="18" height="14" rx="5" fill="#AFA9EC" stroke="#534AB7" stroke-width="1"/>
+            <rect x="19" y="24" width="8" height="8" rx="2" fill="#f5c5a3"/>
+            <ellipse cx="23" cy="17" rx="9" ry="10" fill="#f5c5a3" stroke="#e8a882" stroke-width="1"/>
+            <ellipse cx="23" cy="8" rx="9" ry="6" fill="#8B5E3C"/>
+            <ellipse cx="15" cy="14" rx="3" ry="7" fill="#8B5E3C"/>
+            <ellipse cx="31" cy="14" rx="3" ry="7" fill="#8B5E3C"/>
+            <ellipse cx="18" cy="16" rx="1.8" ry="2.2" fill="#5c3d1e"/>
+            <ellipse cx="28" cy="16" rx="1.8" ry="2.2" fill="#5c3d1e"/>
+            <path d="M18 23 Q23 26 28 23" stroke="#e8a882" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- espiral de pensamiento -->
+            <path d="M34 12 Q40 8 40 14 Q40 20 34 20 Q30 20 30 14 Q30 10 34 10" stroke="#534AB7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <circle cx="34" cy="10" r="1.5" fill="#534AB7"/>
+          </svg>
+        </div>
+        <div><h3>TOC y pensamientos repetitivos</h3><p>Pensamientos intrusivos, rituales, compulsiones o miedo excesivo que afectan la rutina del menor.</p></div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon" style="background:transparent;width:50px;height:50px">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="23" fill="#e6f5f2"/>
+            <!-- niño con puzzle (autismo) -->
+            <rect x="12" y="30" width="20" height="14" rx="5" fill="#9FE1CB" stroke="#1D9E75" stroke-width="1"/>
+            <rect x="17" y="24" width="9" height="8" rx="2" fill="#d4956a"/>
+            <ellipse cx="21" cy="17" rx="9" ry="10" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+            <ellipse cx="21" cy="8" rx="9" ry="6" fill="#c9956a"/>
+            <ellipse cx="13" cy="14" rx="3" ry="7" fill="#c9956a"/>
+            <ellipse cx="29" cy="14" rx="3" ry="7" fill="#c9956a"/>
+            <ellipse cx="17" cy="16" rx="1.8" ry="2.2" fill="#5c3d1e"/>
+            <ellipse cx="25" cy="16" rx="1.8" ry="2.2" fill="#5c3d1e"/>
+            <path d="M16 23 Q21 27 26 23" stroke="#b8734a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- pieza puzzle flotando -->
+            <rect x="32" y="10" width="12" height="10" rx="2" fill="#5DCAA5" stroke="#1D9E75" stroke-width="1"/>
+            <rect x="36" y="8" width="4" height="4" rx="2" fill="#5DCAA5" stroke="#1D9E75" stroke-width="1"/>
+            <rect x="44" y="13" width="4" height="4" rx="2" fill="#5DCAA5" stroke="#1D9E75" stroke-width="1"/>
+          </svg>
+        </div>
+        <div><h3>Autismo y neurodesarrollo</h3><p>Sospecha de dificultades en comunicación, interacción social, flexibilidad, conducta o sensibilidad sensorial.</p></div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon" style="background:transparent;width:50px;height:50px">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="23" fill="#e6f5f2"/>
+            <!-- señal de alerta con niño -->
+            <polygon points="25,6 42,38 8,38" fill="#FAC775" stroke="#854F0B" stroke-width="1.5"/>
+            <rect x="23" y="18" width="4" height="12" rx="2" fill="#854F0B"/>
+            <circle cx="25" cy="34" r="2.5" fill="#854F0B"/>
+            <!-- niño pequeño abajo -->
+            <ellipse cx="25" cy="46" rx="6" ry="4" fill="#f5c5a3" opacity="0.8"/>
+          </svg>
+        </div>
+        <div><h3>Riesgo emocional</h3><p>Autolesiones, ideas de muerte, conductas de riesgo o señales de alarma que requieren atención especializada.</p></div>
+      </div>
+
+      <div class="symptom-card">
+        <div class="symptom-icon" style="background:transparent;width:50px;height:50px">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="23" fill="#e6f5f2"/>
+            <!-- terapeuta y niño (terapia insuficiente) -->
+            <rect x="8" y="30" width="14" height="14" rx="5" fill="#6ba3d4" stroke="#3a6ea5" stroke-width="1"/>
+            <rect x="12" y="24" width="6" height="7" rx="2" fill="#d4956a"/>
+            <ellipse cx="15" cy="18" rx="7" ry="8" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+            <ellipse cx="15" cy="11" rx="7" ry="5" fill="#3d2314"/>
+            <ellipse cx="9" cy="15" rx="2.5" ry="5" fill="#3d2314"/>
+            <ellipse cx="21" cy="15" rx="2.5" ry="5" fill="#3d2314"/>
+            <ellipse cx="12" cy="17" rx="1.5" ry="2" fill="#3d2314"/>
+            <ellipse cx="18" cy="17" rx="1.5" ry="2" fill="#3d2314"/>
+            <path d="M11 23 Q15 26 19 23" stroke="#b8734a" stroke-width="1" fill="none" stroke-linecap="round"/>
+            <!-- flecha hacia médico -->
+            <path d="M22 37 Q29 33 34 37" stroke="#2a8f7c" stroke-width="2" stroke-dasharray="3,2" fill="none" marker-end="url(#arr2)"/>
+            <!-- médico -->
+            <rect x="30" y="30" width="14" height="14" rx="5" fill="white" stroke="#2a8f7c" stroke-width="1.2"/>
+            <rect x="34" y="24" width="6" height="7" rx="2" fill="#f5c5a3"/>
+            <ellipse cx="37" cy="18" rx="7" ry="8" fill="#f5c5a3" stroke="#e8a882" stroke-width="1"/>
+            <ellipse cx="37" cy="11" rx="7" ry="5" fill="#8B5E3C"/>
+            <ellipse cx="31" cy="15" rx="2.5" ry="5" fill="#8B5E3C"/>
+            <ellipse cx="43" cy="15" rx="2.5" ry="5" fill="#8B5E3C"/>
+            <ellipse cx="34" cy="17" rx="1.5" ry="2" fill="#5c3d1e"/>
+            <ellipse cx="40" cy="17" rx="1.5" ry="2" fill="#5c3d1e"/>
+            <path d="M33 23 Q37 26 41 23" stroke="#e8a882" stroke-width="1" fill="none" stroke-linecap="round"/>
+            <!-- estetoscopio mini -->
+            <path d="M30 34 Q26 40 28 44" stroke="#2a8f7c" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <circle cx="28" cy="45" r="2" fill="#2a8f7c"/>
+          </svg>
+        </div>
+        <div><h3>Terapia insuficiente</h3><p>Casos donde la psicoterapia sola no ha sido suficiente o se requiere una valoración médica complementaria.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -381,6 +676,55 @@ footer p{margin-bottom:4px}
     <p style="color:rgba(255,255,255,.78);font-size:1rem;max-width:580px;margin:.5rem 0 2.5rem">Muchas familias llegan a consulta con dudas importantes. Estas son algunas de las más frecuentes:</p>
     <div class="parents-grid">
       <div class="doubts-list">
+        <!-- Ilustración familia preocupada -->
+        <div style="display:flex;justify-content:center;margin-bottom:1.8rem">
+          <svg width="280" height="130" viewBox="0 0 280 130" fill="none">
+            <!-- papá izq -->
+            <rect x="20" y="62" width="32" height="48" rx="10" fill="rgba(239,159,39,.4)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            <rect x="28" y="54" width="12" height="10" rx="3" fill="#d4956a"/>
+            <ellipse cx="34" cy="42" rx="14" ry="15" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+            <ellipse cx="34" cy="28" rx="14" ry="9" fill="#3d2314"/>
+            <ellipse cx="22" cy="38" rx="5" ry="11" fill="#3d2314"/>
+            <ellipse cx="46" cy="38" rx="5" ry="11" fill="#3d2314"/>
+            <!-- cejas preocupadas papá -->
+            <path d="M27 39 Q31 36 35 39" stroke="#3d2314" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M33 39 Q37 36 41 39" stroke="#3d2314" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="28" cy="41" rx="2" ry="2.5" fill="#3d2314"/>
+            <ellipse cx="40" cy="41" rx="2" ry="2.5" fill="#3d2314"/>
+            <path d="M27 49 Q34 46 41 49" stroke="#b8734a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- mamá der -->
+            <rect x="228" y="62" width="32" height="48" rx="10" fill="rgba(239,159,39,.4)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            <rect x="236" y="54" width="12" height="10" rx="3" fill="#f5c5a3"/>
+            <ellipse cx="242" cy="42" rx="14" ry="15" fill="#f5c5a3" stroke="#e8a882" stroke-width="1"/>
+            <ellipse cx="242" cy="28" rx="14" ry="9" fill="#6b4226"/>
+            <ellipse cx="230" cy="36" rx="5" ry="14" fill="#6b4226"/>
+            <ellipse cx="254" cy="36" rx="5" ry="14" fill="#6b4226"/>
+            <!-- cejas preocupadas mamá -->
+            <path d="M235 39 Q239 36 243 39" stroke="#5c3d1e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M241 39 Q245 36 249 39" stroke="#5c3d1e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="236" cy="41" rx="2" ry="2.5" fill="#5c3d1e"/>
+            <ellipse cx="248" cy="41" rx="2" ry="2.5" fill="#5c3d1e"/>
+            <path d="M235 49 Q242 46 249 49" stroke="#e8a882" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- niño centro -->
+            <rect x="114" y="72" width="28" height="38" rx="9" fill="rgba(58,171,149,.4)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            <rect x="121" y="65" width="10" height="9" rx="3" fill="#d4956a"/>
+            <ellipse cx="126" cy="55" rx="12" ry="13" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+            <ellipse cx="126" cy="43" rx="12" ry="8" fill="#8B5E3C"/>
+            <ellipse cx="116" cy="52" rx="4" ry="9" fill="#8B5E3C"/>
+            <ellipse cx="136" cy="52" rx="4" ry="9" fill="#8B5E3C"/>
+            <!-- ojos niño cerrados dormido/tranquilo -->
+            <path d="M120 54 Q123 51 126 54" stroke="#5c3d1e" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <path d="M126 54 Q129 51 132 54" stroke="#5c3d1e" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <path d="M119 61 Q126 65 133 61" stroke="#b8734a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- brazos padres hacia niño -->
+            <path d="M52 82 Q80 74 114 82" stroke="rgba(239,159,39,.5)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M228 82 Q200 74 142 82" stroke="rgba(239,159,39,.5)" stroke-width="5" stroke-linecap="round"/>
+            <!-- signos de interrogación flotando -->
+            <text x="88" y="36" font-size="18" fill="rgba(255,255,255,.35)" font-family="sans-serif" text-anchor="middle">?</text>
+            <text x="192" y="36" font-size="18" fill="rgba(255,255,255,.35)" font-family="sans-serif" text-anchor="middle">?</text>
+            <text x="140" y="28" font-size="22" fill="rgba(255,255,255,.25)" font-family="sans-serif" text-anchor="middle">?</text>
+          </svg>
+        </div>
         <div class="doubt-item"><span class="doubt-q">?</span><span>"¿Esto es normal para su edad?"</span></div>
         <div class="doubt-item"><span class="doubt-q">?</span><span>"¿Necesita terapia, valoración médica o ambas?"</span></div>
         <div class="doubt-item"><span class="doubt-q">?</span><span>"¿Tiene TDAH, ansiedad, depresión, TOC, autismo o algo más?"</span></div>
@@ -393,7 +737,7 @@ footer p{margin-bottom:4px}
         <h3 style="color:#fff;font-size:1.3rem;margin-bottom:1rem">Nuestra respuesta</h3>
         <p>En AMEPSIN buscamos que los padres reciban una <strong style="color:#7dd8cd">orientación profesional clara, cuidadosa y ética</strong>, para comprender mejor lo que ocurre y tomar decisiones informadas sobre el cuidado de su hijo. No se trata de etiquetar al menor, sino de entender qué está viviendo y cómo acompañarlo mejor.</p>
         <div style="margin-top:1.5rem">
-          <a href="https://wa.me/522228783184?text=Hola%2C%20tengo%20dudas%20sobre%20la%20consulta%20de%20paidopsiquiatr%C3%ADa%20para%20mi%20hijo" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:.95rem;padding:13px 24px">
+          <a href="https://wa.me/522223496269?text=Hola%2C%20tengo%20dudas%20sobre%20la%20consulta%20de%20paidopsiquiatr%C3%ADa%20para%20mi%20hijo" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:.95rem;padding:13px 24px">
             <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
             Resolver mis dudas por WhatsApp
           </a>
@@ -484,11 +828,52 @@ footer p{margin-bottom:4px}
         <div class="diff-feature"><div class="diff-check">✓</div><div><p><strong>Presencial en Puebla y consulta en línea</strong> — mayor accesibilidad para familias dentro y fuera de la ciudad.</p></div></div>
       </div>
       <div class="diff-image">
-        <div class="diff-big-icon">👨‍⚕️</div>
+        <div style="display:flex;justify-content:center;margin-bottom:1rem">
+          <svg width="110" height="130" viewBox="0 0 110 130" fill="none">
+            <!-- bata médica -->
+            <rect x="18" y="72" width="74" height="50" rx="18" fill="white" stroke="#2a8f7c" stroke-width="2"/>
+            <rect x="44" y="72" width="22" height="50" fill="#e6f5f2"/>
+            <!-- estetoscopio -->
+            <path d="M26 86 Q14 104 20 118" stroke="#2a8f7c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="20" cy="120" r="6" fill="#2a8f7c" stroke="white" stroke-width="1.5"/>
+            <path d="M26 86 Q36 96 44 92" stroke="#2a8f7c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- bolsillo con lapicero -->
+            <rect x="70" y="86" width="16" height="20" rx="4" fill="#e6f5f2" stroke="#2a8f7c" stroke-width="1"/>
+            <rect x="75" y="82" width="4" height="10" rx="2" fill="#2a8f7c"/>
+            <!-- cuello -->
+            <rect x="44" y="60" width="22" height="16" rx="6" fill="#d4956a"/>
+            <!-- cabeza -->
+            <ellipse cx="55" cy="44" rx="28" ry="30" fill="#d4956a" stroke="#b8734a" stroke-width="1.5"/>
+            <!-- pelo largo mujer -->
+            <ellipse cx="55" cy="18" rx="28" ry="17" fill="#3d2314"/>
+            <ellipse cx="28" cy="40" rx="10" ry="22" fill="#3d2314"/>
+            <ellipse cx="82" cy="40" rx="10" ry="22" fill="#3d2314"/>
+            <!-- moño -->
+            <ellipse cx="55" cy="14" rx="16" ry="9" fill="#3d2314"/>
+            <circle cx="55" cy="14" r="6" fill="#2a8f7c"/>
+            <!-- gafas -->
+            <rect x="37" y="38" width="16" height="13" rx="6" fill="none" stroke="#1a3d6b" stroke-width="1.8"/>
+            <rect x="57" y="38" width="16" height="13" rx="6" fill="none" stroke="#1a3d6b" stroke-width="1.8"/>
+            <line x1="53" y1="44" x2="57" y2="44" stroke="#1a3d6b" stroke-width="1.8"/>
+            <!-- ojos -->
+            <ellipse cx="45" cy="44" rx="3.5" ry="4" fill="#3d2314"/>
+            <ellipse cx="65" cy="44" rx="3.5" ry="4" fill="#3d2314"/>
+            <circle cx="46.5" cy="43" r="1.2" fill="white"/>
+            <circle cx="66.5" cy="43" r="1.2" fill="white"/>
+            <!-- sonrisa cálida -->
+            <path d="M42 57 Q55 66 68 57" stroke="#b8734a" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- mejillas -->
+            <ellipse cx="39" cy="55" rx="6" ry="3.5" fill="#f7a8b8" opacity="0.55"/>
+            <ellipse cx="71" cy="55" rx="6" ry="3.5" fill="#f7a8b8" opacity="0.55"/>
+            <!-- aretes -->
+            <circle cx="28" cy="48" r="4" fill="#d4a843" stroke="#b8734a" stroke-width="1"/>
+            <circle cx="82" cy="48" r="4" fill="#d4a843" stroke="#b8734a" stroke-width="1"/>
+          </svg>
+        </div>
         <h3>Valoración especializada, clara y con orientación para la familia</h3>
         <p>El objetivo no es solo dar un diagnóstico. Es comprender qué está ocurriendo, cómo se manifiestan los síntomas y qué tipo de apoyo necesita el niño o adolescente.</p>
         <div style="margin-top:1.5rem">
-          <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:.93rem;padding:13px 22px">
+          <a href="https://wa.me/522223496269?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:.93rem;padding:13px 22px">
             <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
             Quiero agendar por WhatsApp
           </a>
@@ -503,7 +888,7 @@ footer p{margin-bottom:4px}
   <div class="container">
     <h2>Agenda una valoración para tu hijo</h2>
     <p>Si notas cambios importantes en la conducta, emociones, atención, sueño, estado de ánimo o desempeño escolar de tu hijo, una valoración especializada puede ayudarte a entender mejor qué está ocurriendo.</p>
-    <a href="https://wa.me/522228783184?text=Hola%2C%20quiero%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa%20para%20mi%20hijo" target="_blank" rel="noopener" class="btn btn-wa">
+    <a href="https://wa.me/522223496269?text=Hola%2C%20quiero%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa%20para%20mi%20hijo" target="_blank" rel="noopener" class="btn btn-wa">
       <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
       Quiero agendar por WhatsApp
     </a>
@@ -542,7 +927,7 @@ footer p{margin-bottom:4px}
       </div>
     </div>
     <div class="btn-center">
-      <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="btn btn-wa">
+      <a href="https://wa.me/522223496269?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="btn btn-wa">
         <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
         Agendar consulta por WhatsApp
       </a>
@@ -602,7 +987,7 @@ footer p{margin-bottom:4px}
       <div class="location-info">
         <div class="loc-row">
           <div class="loc-icon">📍</div>
-          <div><strong>Dirección</strong><span>3 Poniente 512, interior 14<br>Centro Histórico, Puebla, Pue.</span></div>
+          <div><strong>Dirección</strong><span>3 Poniente 512, interior 10<br>Centro Histórico, Puebla, Pue.</span></div>
         </div>
         <div class="loc-row">
           <div class="loc-icon">🕐</div>
@@ -612,7 +997,7 @@ footer p{margin-bottom:4px}
           <div class="loc-icon">💻</div>
           <div><strong>Modalidades</strong><span>Presencial en Puebla y consulta en línea</span></div>
         </div>
-        <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20horarios%20disponibles%20para%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="btn btn-wa" style="justify-content:center">
+        <a href="https://wa.me/522223496269?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20horarios%20disponibles%20para%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="btn btn-wa" style="justify-content:center">
           <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
           Consultar horarios disponibles
         </a>
@@ -645,7 +1030,7 @@ footer p{margin-bottom:4px}
         <div style="font-size:.75rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px">Presencial</div>
       </div>
     </div>
-    <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:1.05rem;padding:16px 36px;box-shadow:0 8px 28px rgba(37,211,102,.4)">
+    <a href="https://wa.me/522223496269?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:1.05rem;padding:16px 36px;box-shadow:0 8px 28px rgba(37,211,102,.4)">
       <svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
       Agendar por WhatsApp
     </a>
@@ -655,20 +1040,21 @@ footer p{margin-bottom:4px}
 <footer>
   <div class="container">
     <p>© <span id="year"></span> AMEPSIN — Asociación Mexicana de Psicología y Neurociencias. Todos los derechos reservados.</p>
-    <p>3 Poniente 512, interior 14, Centro Histórico, Puebla · <a href="mailto:psicoterapia@amepsin.com.mx">psicoterapia@amepsin.com.mx</a></p>
+    <p>3 Poniente 512, interior 10, Centro Histórico, Puebla · <a href="mailto:psicoterapia@amepsin.com.mx">psicoterapia@amepsin.com.mx</a></p>
+    <p style="margin-top:10px"><a href="../aviso-de-privacidad.html" style="color:rgba(255,255,255,.85);text-decoration:underline">Aviso de Privacidad</a></p>
   </div>
 </footer>
 
 <!-- FLOATING BUTTONS -->
 <div class="floating">
   <div class="float-item">
-    <a href="https://wa.me/522228783184?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="WhatsApp">
+    <a href="https://wa.me/522223496269?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20paidopsiquiatr%C3%ADa" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="WhatsApp">
       <svg width="28" height="28" viewBox="0 0 32 32" fill="#fff"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
     </a>
     <span class="float-label">WhatsApp</span>
   </div>
   <div class="float-item">
-    <a href="tel:+522228783184" class="float-btn float-call" aria-label="Llamar">
+    <a href="tel:+522223496269" class="float-btn float-call" aria-label="Llamar">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
     </a>
     <span class="float-label">Llamadas</span>
