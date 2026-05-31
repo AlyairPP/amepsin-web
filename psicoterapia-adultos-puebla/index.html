@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psicoterapia para Adultos en Puebla | AMEPSIN</title>
+<meta name="description" content="Psicoterapia para adultos en Puebla. Atención para ansiedad, depresión, estrés, autoestima, trauma y más. Enfoque cognitivo-conductual, sesiones desde $350 MXN. Presencial y en línea.">
+<meta name="theme-color" content="#1e3a5f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1e3a5f;
+  --navy-deep: #111f35;
+  --navy-mid: #2a4f7a;
+  --sage: #4a7c6f;
+  --sage-light: #e8f2ef;
+  --sage-mid: #5e9e8e;
+  --warm: #c8885a;
+  --warm-light: #fdf4ed;
+  --bg: #f6f8fb;
+  --bg-alt: #edf1f7;
+  --white: #ffffff;
+  --text: #1a2332;
+  --text-soft: #506070;
+  --text-muted: #8fa0b0;
+  --border: rgba(30,58,95,.09);
+  --radius: 18px;
+  --radius-sm: 10px;
+  --shadow: 0 4px 22px rgba(30,58,95,.07);
+  --shadow-md: 0 8px 34px rgba(30,58,95,.11);
+  --shadow-lg: 0 18px 52px rgba(30,58,95,.15);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--text);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:16px}
+img{max-width:100%;display:block}
+a{color:var(--navy);text-decoration:none;transition:color .2s}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;color:var(--navy);line-height:1.12;font-weight:600}
+h1{font-size:clamp(2.2rem,5vw,3.6rem)}
+h2{font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:.7rem}
+h3{font-size:1.2rem;margin-bottom:.5rem}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+.container-sm{max-width:760px;margin:0 auto;padding:0 24px}
+section{padding:5rem 0}
+section.alt{background:var(--bg)}
+section.dark{background:var(--navy-deep);color:#fff}
+section.dark h2{color:#fff}
+section.warm{background:var(--warm-light)}
+
+.eyebrow{display:block;font-size:.74rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--sage);margin-bottom:.75rem}
+.eyebrow-center{text-align:center}
+
+/* ── HEADER ── */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:12px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--navy)}
+.logo-badge{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);display:grid;place-items:center;color:#fff;font-size:.8rem;font-weight:700;flex-shrink:0}
+.logo-text span{display:block;font-size:.97rem;font-weight:600;line-height:1.1}
+.logo-text small{font-size:.58rem;letter-spacing:2px;color:var(--text-soft);text-transform:uppercase}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:#fff;padding:10px 20px;border-radius:30px;font-weight:600;font-size:.88rem;transition:all .2s;white-space:nowrap}
+.nav-cta:hover{background:#1ebe5b;color:#fff;transform:translateY(-1px);box-shadow:0 6px 18px rgba(37,211,102,.4)}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(150deg,var(--navy-deep) 0%,#1a3255 55%,#1e4070 100%);min-height:100vh;display:flex;align-items:center;padding-top:76px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 65% 55% at 75% 55%,rgba(74,124,111,.2) 0%,transparent 65%)}
+.hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--sage) 0%,var(--sage-mid) 40%,var(--warm) 100%)}
+.hero-inner{position:relative;z-index:1;padding:4.5rem 0;display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:center}
+@media(max-width:880px){.hero-inner{grid-template-columns:1fr;max-width:780px}.hero-illus-r{display:none}}
+.hero h1{color:#fff;margin-bottom:1.3rem;font-style:italic}
+.hero h1 em{font-style:normal;color:var(--sage-mid)}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.82);line-height:1.75;margin-bottom:2rem;max-width:580px}
+.hero-bullets{display:flex;flex-direction:column;gap:9px;margin-bottom:2.2rem}
+.hero-bullet{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.88);font-size:.95rem}
+.hero-dot{width:6px;height:6px;border-radius:50%;background:var(--sage-mid);flex-shrink:0}
+.hero-price{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:30px;margin-bottom:2rem;backdrop-filter:blur(8px)}
+.hero-price strong{font-family:'Fraunces',Georgia,serif;font-size:1.4rem;color:#fff;font-weight:600}
+.hero-price span{font-size:.82rem;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:1px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-trust{display:flex;align-items:center;gap:8px;margin-top:1.2rem;color:rgba(255,255,255,.55);font-size:.83rem}
+.hero-trust-dot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.35)}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:30px;font-weight:600;font-size:.97rem;cursor:pointer;transition:all .25s;border:0;font-family:inherit;text-decoration:none}
+.btn-wa{background:#25d366;color:#fff;box-shadow:0 6px 20px rgba(37,211,102,.35)}
+.btn-wa:hover{background:#1ebe5b;color:#fff;transform:translateY(-2px);box-shadow:0 10px 28px rgba(37,211,102,.45)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45);font-size:.9rem;padding:12px 22px}
+.btn-ghost:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-center{display:flex;justify-content:center;margin-top:2.5rem}
+
+/* ── PARA QUIÉN ── */
+.when-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:2.5rem}
+.when-text p{color:var(--text-soft);font-size:1rem;line-height:1.8;margin-bottom:1rem}
+.when-text p strong{color:var(--navy)}
+.motivos-list{display:flex;flex-direction:column;gap:10px}
+.motivo-item{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;background:var(--white);border-radius:var(--radius-sm);border:1px solid var(--border);font-size:.93rem;color:var(--text-soft);line-height:1.5;transition:all .2s}
+.motivo-item:hover{border-color:rgba(74,124,111,.3);box-shadow:var(--shadow);color:var(--text)}
+.motivo-check{width:22px;height:22px;border-radius:50%;background:var(--sage-light);display:grid;place-items:center;flex-shrink:0;color:var(--sage);font-size:.8rem;margin-top:1px}
+
+/* ── PROPUESTA VALOR ── */
+.value-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:2.5rem}
+.value-col{padding:28px 24px;background:var(--white);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);transition:all .25s;position:relative;overflow:hidden}
+.value-col::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sage),var(--sage-mid));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.value-col:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+.value-col:hover::after{transform:scaleX(1)}
+.value-num{font-family:'Fraunces',Georgia,serif;font-size:2.8rem;color:var(--sage);line-height:1;margin-bottom:.6rem;font-weight:400}
+.value-col h3{color:var(--navy);margin-bottom:.6rem}
+.value-col p{font-size:.9rem;color:var(--text-soft);line-height:1.65}
+
+/* ── DIFERENCIADOR ── */
+.diff-block{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:2.5rem}
+.diff-text p{color:var(--text-soft);font-size:1rem;line-height:1.8;margin-bottom:1rem}
+.diff-text p strong{color:var(--navy)}
+.price-feature{background:var(--white);border-radius:var(--radius);padding:36px 32px;box-shadow:var(--shadow-lg);border:1px solid var(--border);text-align:center}
+.price-main{font-family:'Fraunces',Georgia,serif;font-size:4rem;color:var(--navy);line-height:1;font-weight:600}
+.price-sub{font-size:.85rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:1.5rem}
+.price-includes{list-style:none;text-align:left;display:flex;flex-direction:column;gap:10px;margin-bottom:1.8rem}
+.price-includes li{display:flex;gap:10px;font-size:.9rem;color:var(--text-soft);line-height:1.5}
+.price-includes li::before{content:"✓";color:var(--sage);font-weight:700;flex-shrink:0}
+
+/* ── ENFOQUE TCC ── */
+.tcc-block{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:2.5rem}
+.tcc-visual{background:linear-gradient(135deg,var(--sage-light) 0%,var(--bg-alt) 100%);border-radius:var(--radius);padding:40px 36px;border:1px solid rgba(74,124,111,.15);box-shadow:var(--shadow-md)}
+.tcc-diagram{display:flex;flex-direction:column;gap:0}
+.tcc-node{padding:16px 20px;border-radius:var(--radius-sm);font-size:.92rem;font-weight:500;text-align:center;color:var(--navy)}
+.tcc-node.t{background:#dceef8;border:1px solid rgba(30,58,95,.15)}
+.tcc-node.e{background:#d4ede7;border:1px solid rgba(74,124,111,.2)}
+.tcc-node.c{background:#fde8d8;border:1px solid rgba(200,136,90,.2)}
+.tcc-arrow{text-align:center;font-size:1.2rem;color:var(--text-muted);padding:4px 0}
+.tcc-text p{color:var(--text-soft);font-size:1rem;line-height:1.8;margin-bottom:1rem}
+.tcc-text p strong{color:var(--navy)}
+.tcc-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.2rem}
+.tcc-tag{padding:5px 14px;background:var(--sage-light);color:var(--sage);border-radius:20px;font-size:.8rem;font-weight:600}
+
+/* ── PRIMERA SESIÓN ── */
+.session-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:2.5rem}
+.session-step{padding:22px 18px;background:var(--white);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);display:flex;gap:14px;align-items:flex-start;transition:all .2s}
+.session-step:hover{border-color:rgba(74,124,111,.2);box-shadow:var(--shadow-md)}
+.step-dot{width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:.82rem;font-weight:600;flex-shrink:0;font-family:'DM Sans',sans-serif}
+.session-step p{font-size:.88rem;color:var(--text-soft);line-height:1.55;margin-top:.2rem}
+
+/* ── CTA BAND ── */
+.cta-band{background:linear-gradient(135deg,var(--sage) 0%,var(--sage-mid) 100%);padding:4.5rem 0;text-align:center}
+.cta-band h2{color:#fff;margin-bottom:.7rem}
+.cta-band p{color:rgba(255,255,255,.88);font-size:1rem;max-width:520px;margin:.5rem auto 2rem;line-height:1.7}
+
+/* ── PRECIO ── */
+.pricing-center{max-width:480px;margin:2.5rem auto 0}
+.pricing-card{background:var(--white);border-radius:var(--radius);padding:36px 32px;border:2px solid var(--navy);box-shadow:var(--shadow-lg);text-align:center}
+.pricing-label{display:inline-block;padding:4px 14px;background:var(--navy);color:#fff;border-radius:20px;font-size:.74rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem}
+.pricing-name{font-family:'Fraunces',Georgia,serif;font-size:1.3rem;color:var(--navy);margin-bottom:.5rem;font-weight:600}
+.pricing-amount{font-family:'Fraunces',Georgia,serif;font-size:3.2rem;color:var(--navy);line-height:1;font-weight:600;margin-bottom:.3rem}
+.pricing-per{font-size:.85rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:1.4rem}
+.pricing-list{list-style:none;text-align:left;display:flex;flex-direction:column;gap:10px;margin-bottom:2rem}
+.pricing-list li{display:flex;gap:10px;font-size:.9rem;color:var(--text-soft);line-height:1.5}
+.pricing-list li::before{content:"✓";color:var(--sage);font-weight:700;flex-shrink:0}
+
+/* ── UBICACIÓN ── */
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:2.5rem;align-items:start}
+.location-info{display:flex;flex-direction:column;gap:14px}
+.loc-row{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:var(--white);border-radius:var(--radius-sm);border:1px solid var(--border)}
+.loc-icon{width:40px;height:40px;border-radius:50%;background:var(--sage-light);display:grid;place-items:center;flex-shrink:0;color:var(--sage);font-size:1.1rem}
+.loc-row strong{display:block;font-size:.88rem;color:var(--navy);margin-bottom:.2rem;font-weight:600}
+.loc-row span{font-size:.86rem;color:var(--text-soft);line-height:1.5}
+.map-wrap{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);height:340px}
+.map-wrap iframe{width:100%;height:100%;border:0;display:block}
+
+/* ── FAQ ── */
+.faq{max-width:800px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--white);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;transition:all .25s}
+.faq-item:hover{box-shadow:var(--shadow);border-color:rgba(74,124,111,.2)}
+.faq-item.open{border-color:rgba(74,124,111,.35);box-shadow:var(--shadow-md)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;cursor:pointer;font-weight:500;font-size:.96rem;color:var(--navy);gap:16px;user-select:none;line-height:1.45}
+.faq-icon{width:30px;height:30px;border-radius:50%;background:var(--bg);display:grid;place-items:center;flex-shrink:0;transition:all .3s;position:relative}
+.faq-icon::before,.faq-icon::after{content:"";position:absolute;background:var(--navy);border-radius:2px;transition:transform .3s}
+.faq-icon::before{width:12px;height:2px}
+.faq-icon::after{width:2px;height:12px}
+.faq-item.open .faq-icon{background:var(--sage);transform:rotate(45deg)}
+.faq-item.open .faq-icon::before,.faq-item.open .faq-icon::after{background:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1)}
+.faq-item.open .faq-a{max-height:400px}
+.faq-a-inner{padding:0 24px 20px;color:var(--text-soft);font-size:.92rem;line-height:1.75;border-top:1px solid var(--border)}
+.faq-a-inner p{padding-top:16px}
+
+/* ── FOOTER ── */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:28px 0;font-size:.84rem;text-align:center}
+footer a{color:rgba(255,255,255,.85)}
+footer p{margin-bottom:4px}
+
+/* ── FLOATING ── */
+.floating{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;gap:14px;align-items:center}
+.float-item{display:flex;flex-direction:column;align-items:center;gap:5px}
+.float-btn{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:#fff;transition:all .25s;position:relative}
+.float-btn:hover{transform:translateY(-3px) scale(1.06);color:#fff}
+.float-wa{background:linear-gradient(135deg,#4ce28a 0%,#25d366 60%,#1ba94a 100%);box-shadow:0 8px 24px rgba(37,211,102,.45)}
+.float-call{background:linear-gradient(135deg,#5fb3ff 0%,#1e88e5 60%,#0d5fb8 100%);box-shadow:0 8px 24px rgba(30,136,229,.45)}
+.float-wa::before,.float-call::before{content:"";position:absolute;inset:0;border-radius:50%;z-index:-1;animation:pulse 2.4s ease-out infinite}
+.float-wa::before{background:#25d366}
+.float-call::before{background:#1e88e5;animation-delay:1.2s}
+.float-label{font-size:.6rem;font-weight:700;color:#fff;background:rgba(15,38,69,.88);padding:3px 8px;border-radius:8px;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.65);opacity:0}100%{transform:scale(1.65);opacity:0}}
+
+/* ── MOBILE ── */
+@media(max-width:860px){
+  section{padding:3.5rem 0}
+  .when-layout,.diff-block,.tcc-block,.location-grid{grid-template-columns:1fr}
+  .value-cols{grid-template-columns:1fr}
+  .hero-inner{padding:3rem 0}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+  .floating{bottom:14px;right:14px;gap:10px}
+  .float-btn{width:52px;height:52px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav-inner">
+    <a href="https://www.amepsin.com.mx" class="logo">
+      <div class="logo-badge">A</div>
+      <div class="logo-text"><span>AMEPSIN</span><small>Salud Mental</small></div>
+    </a>
+    <a href="https://wa.me/522223496269?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20psicoterapia%20para%20adultos%20en%20AMEPSIN.%20Me%20gustar%C3%ADa%20agendar%20una%20cita.%20%C2%BFMe%20pueden%20dar%20horarios%20disponibles%3F" target="_blank" rel="noopener" class="nav-cta">
+      <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+      Agendar cita
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <h1>Psicoterapia para<br><em>adultos</em> en Puebla</h1>
+        <p class="hero-sub">Atención psicológica profesional para adultos que buscan trabajar ansiedad, depresión, estrés, autoestima, experiencias traumáticas, problemas relacionados con adicciones, crisis personales, duelo, dificultades emocionales o patrones de pensamiento y conducta que desean cambiar.</p>
+        <div class="hero-bullets">
+          <div class="hero-bullet"><span class="hero-dot"></span>Atención presencial en Puebla y modalidad en línea</div>
+          <div class="hero-bullet"><span class="hero-dot"></span>Enfoque en Terapia Cognitivo-Conductual</div>
+          <div class="hero-bullet"><span class="hero-dot"></span>Psicólogos con maestría en Terapia Cognitivo-Conductual (o por terminarla) y supervisión profesional</div>
+        </div>
+        <div class="hero-price">
+          <strong>$350</strong>
+          <span>MXN / sesión</span>
+        </div>
+        <div class="hero-actions">
+          <a href="https://wa.me/522223496269?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20psicoterapia%20para%20adultos%20en%20AMEPSIN.%20Me%20gustar%C3%ADa%20agendar%20una%20cita.%20%C2%BFMe%20pueden%20dar%20horarios%20disponibles%3F" target="_blank" rel="noopener" class="btn btn-wa">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+            Agendar cita por WhatsApp
+          </a>
+          <a href="#ubicacion" class="btn btn-ghost">Ver ubicación</a>
+        </div>
+        <div class="hero-trust">
+          <span>Puebla, México</span>
+          <span class="hero-trust-dot"></span>
+          <span>Lunes a sábado</span>
+          <span class="hero-trust-dot"></span>
+          <span>Presencial y en línea</span>
+        </div>
+      </div>
+
+      <!-- Ilustración hero: terapeuta y paciente adulto -->
+      <div class="hero-illus-r">
+        <svg width="360" height="400" viewBox="0 0 360 400" fill="none">
+          <circle cx="180" cy="200" r="158" fill="rgba(255,255,255,.05)"/>
+          <circle cx="180" cy="200" r="118" fill="rgba(255,255,255,.04)"/>
+
+          <!-- planta decorativa -->
+          <rect x="300" y="250" width="8" height="50" rx="4" fill="rgba(94,158,142,.4)"/>
+          <ellipse cx="304" cy="244" rx="22" ry="14" fill="rgba(94,158,142,.45)"/>
+          <ellipse cx="293" cy="237" rx="13" ry="9" fill="rgba(94,158,142,.35)"/>
+          <ellipse cx="315" cy="237" rx="13" ry="9" fill="rgba(94,158,142,.35)"/>
+
+          <!-- diván / sillón -->
+          <rect x="58" y="278" width="200" height="48" rx="16" fill="rgba(94,158,142,.3)" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+          <rect x="50" y="258" width="216" height="26" rx="11" fill="rgba(94,158,142,.35)" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+          <rect x="50" y="274" width="14" height="52" rx="7" fill="rgba(94,158,142,.3)" stroke="rgba(255,255,255,.15)" stroke-width="1.5"/>
+          <rect x="252" y="274" width="14" height="52" rx="7" fill="rgba(94,158,142,.3)" stroke="rgba(255,255,255,.15)" stroke-width="1.5"/>
+
+          <!-- TERAPEUTA (izq) -->
+          <rect x="78" y="200" width="48" height="58" rx="14" fill="rgba(94,158,142,.45)" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+          <!-- brazo con libreta -->
+          <path d="M78 220 Q62 216 56 228" stroke="rgba(94,158,142,.5)" stroke-width="8" stroke-linecap="round"/>
+          <rect x="42" y="224" width="20" height="26" rx="4" fill="rgba(255,255,255,.18)" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+          <line x1="47" y1="231" x2="58" y2="231" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+          <line x1="47" y1="236" x2="58" y2="236" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+          <line x1="47" y1="241" x2="54" y2="241" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+          <!-- brazo hacia paciente -->
+          <path d="M126 220 Q146 214 158 220" stroke="rgba(94,158,142,.5)" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="159" cy="221" r="6" fill="#d4956a"/>
+          <!-- cuello -->
+          <rect x="93" y="190" width="18" height="14" rx="6" fill="#d4956a"/>
+          <!-- cabeza terapeuta -->
+          <ellipse cx="102" cy="166" rx="27" ry="29" fill="#d4956a" stroke="#b8734a" stroke-width="1.5"/>
+          <!-- pelo recogido -->
+          <ellipse cx="102" cy="141" rx="27" ry="16" fill="#3d2314"/>
+          <ellipse cx="79" cy="160" rx="9" ry="19" fill="#3d2314"/>
+          <ellipse cx="125" cy="160" rx="9" ry="19" fill="#3d2314"/>
+          <ellipse cx="102" cy="137" rx="13" ry="8" fill="#3d2314"/>
+          <circle cx="102" cy="137" r="5" fill="#4a7c6f"/>
+          <!-- ojos -->
+          <ellipse cx="93" cy="164" rx="4" ry="5" fill="#3d2314"/>
+          <ellipse cx="111" cy="164" rx="4" ry="5" fill="#3d2314"/>
+          <circle cx="94.5" cy="162.5" r="1.5" fill="white"/>
+          <circle cx="112.5" cy="162.5" r="1.5" fill="white"/>
+          <!-- sonrisa -->
+          <path d="M91 177 Q102 185 113 177" stroke="#b8734a" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="88" cy="175" rx="5" ry="3" fill="#f7a8b8" opacity="0.5"/>
+          <ellipse cx="116" cy="175" rx="5" ry="3" fill="#f7a8b8" opacity="0.5"/>
+
+          <!-- PACIENTE adulto (der) -->
+          <rect x="196" y="204" width="48" height="54" rx="14" fill="rgba(200,136,90,.4)" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+          <path d="M204 258 Q198 280 196 322" stroke="rgba(200,136,90,.4)" stroke-width="10" stroke-linecap="round"/>
+          <path d="M236 258 Q242 280 244 322" stroke="rgba(200,136,90,.4)" stroke-width="10" stroke-linecap="round"/>
+          <!-- brazo hacia terapeuta -->
+          <path d="M196 220 Q174 214 162 220" stroke="rgba(200,136,90,.4)" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="161" cy="221" r="6" fill="#f5c5a3"/>
+          <!-- cuello -->
+          <rect x="211" y="192" width="18" height="14" rx="6" fill="#f5c5a3"/>
+          <!-- cabeza paciente -->
+          <ellipse cx="220" cy="168" rx="27" ry="29" fill="#f5c5a3" stroke="#e8a882" stroke-width="1.5"/>
+          <!-- pelo corto -->
+          <ellipse cx="220" cy="144" rx="27" ry="16" fill="#6b4226"/>
+          <ellipse cx="197" cy="162" rx="9" ry="17" fill="#6b4226"/>
+          <ellipse cx="243" cy="162" rx="9" ry="17" fill="#6b4226"/>
+          <!-- ojos -->
+          <ellipse cx="211" cy="166" rx="4" ry="5" fill="#5c3d1e"/>
+          <ellipse cx="229" cy="166" rx="4" ry="5" fill="#5c3d1e"/>
+          <circle cx="212.5" cy="164.5" r="1.5" fill="white"/>
+          <circle cx="230.5" cy="164.5" r="1.5" fill="white"/>
+          <!-- expresión tranquila -->
+          <path d="M209 179 Q220 186 231 179" stroke="#e8a882" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="207" cy="177" rx="5" ry="3" fill="#f7a8b8" opacity="0.5"/>
+          <ellipse cx="233" cy="177" rx="5" ry="3" fill="#f7a8b8" opacity="0.5"/>
+
+          <!-- burbuja paciente -->
+          <rect x="264" y="106" width="92" height="42" rx="11" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+          <path d="M272 148 L268 160 L282 148" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+          <text x="310" y="125" font-size="10" fill="rgba(255,255,255,.8)" font-family="sans-serif" text-anchor="middle">Quiero sentirme</text>
+          <text x="310" y="139" font-size="10" fill="rgba(255,255,255,.8)" font-family="sans-serif" text-anchor="middle">mejor.</text>
+
+          <!-- burbuja terapeuta -->
+          <rect x="6" y="104" width="100" height="42" rx="11" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+          <path d="M96 146 L100 158 L86 146" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+          <text x="56" y="123" font-size="10" fill="rgba(255,255,255,.8)" font-family="sans-serif" text-anchor="middle">Demos el primer</text>
+          <text x="56" y="137" font-size="10" fill="rgba(255,255,255,.8)" font-family="sans-serif" text-anchor="middle">paso juntos.</text>
+
+          <!-- elementos flotantes -->
+          <path d="M312 60 L314 52 L316 60 L324 60 L318 65 L320 73 L314 68 L308 73 L310 65 L304 60 Z" fill="rgba(255,255,255,.3)"/>
+          <path d="M40 70 L41.5 64 L43 70 L49 70 L44 74 L45.5 80 L41.5 76 L37.5 80 L39 74 L34 70 Z" fill="rgba(200,136,90,.5)"/>
+          <path d="M180 76 Q182 70 187 76 Q192 70 194 76 Q194 83 187 89 Q180 83 180 76Z" fill="rgba(247,168,184,.55)"/>
+          <circle cx="40" cy="300" r="9" fill="rgba(94,158,142,.2)" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section id="para-quien">
+  <div class="container">
+    <span class="eyebrow">¿Cuándo puede ayudarte?</span>
+    <h2>¿Cuándo puede ayudarte la psicoterapia?</h2>
+    <div class="when-layout">
+      <div class="when-text">
+        <p>La psicoterapia para adultos puede ayudarte cuando sientes que tus emociones, pensamientos o conductas están afectando tu vida diaria, tus relaciones, tu trabajo, tu autoestima o tu bienestar.</p>
+        <p>En AMEPSIN atendemos adultos que buscan apoyo psicológico para <strong>comprender lo que les ocurre</strong>, desarrollar herramientas prácticas y avanzar con mayor claridad en su proceso personal.</p>
+
+        <!-- Ilustración: del agobio a la calma -->
+        <div style="margin-top:2rem;background:var(--sage-light);border-radius:var(--radius);padding:22px;display:flex;align-items:center;gap:20px">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" style="flex-shrink:0">
+            <!-- persona caminando hacia adelante con energía renovada -->
+            <!-- sol/luz de bienestar detrás -->
+            <circle cx="60" cy="40" r="26" fill="#c8e0d8" opacity="0.7"/>
+            <line x1="60" y1="6" x2="60" y2="2" stroke="var(--sage-mid)" stroke-width="2" stroke-linecap="round"/>
+            <line x1="86" y1="14" x2="89" y2="11" stroke="var(--sage-mid)" stroke-width="2" stroke-linecap="round"/>
+            <line x1="34" y1="14" x2="31" y2="11" stroke="var(--sage-mid)" stroke-width="2" stroke-linecap="round"/>
+            <line x1="94" y1="40" x2="98" y2="40" stroke="var(--sage-mid)" stroke-width="2" stroke-linecap="round"/>
+            <line x1="26" y1="40" x2="22" y2="40" stroke="var(--sage-mid)" stroke-width="2" stroke-linecap="round"/>
+            <!-- cuerpo -->
+            <rect x="46" y="62" width="28" height="32" rx="10" fill="var(--sage)" stroke="#3a655a" stroke-width="1"/>
+            <!-- brazos abiertos / liberados -->
+            <path d="M46 70 Q34 64 32 54" stroke="var(--sage)" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="31" cy="53" r="4" fill="#d4956a"/>
+            <path d="M74 70 Q86 64 88 54" stroke="var(--sage)" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="89" cy="53" r="4" fill="#d4956a"/>
+            <!-- piernas -->
+            <path d="M52 94 Q50 106 48 116" stroke="var(--sage)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M68 94 Q70 106 72 116" stroke="var(--sage)" stroke-width="6" stroke-linecap="round"/>
+            <!-- cuello -->
+            <rect x="54" y="54" width="12" height="10" rx="4" fill="#d4956a"/>
+            <!-- cabeza -->
+            <ellipse cx="60" cy="40" rx="18" ry="19" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+            <!-- pelo -->
+            <ellipse cx="60" cy="26" rx="18" ry="11" fill="#4a2c17"/>
+            <ellipse cx="44" cy="37" rx="6" ry="12" fill="#4a2c17"/>
+            <ellipse cx="76" cy="37" rx="6" ry="12" fill="#4a2c17"/>
+            <!-- ojos cerrados contentos -->
+            <path d="M50 39 Q54 36 58 39" stroke="#4a2c17" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <path d="M62 39 Q66 36 70 39" stroke="#4a2c17" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <!-- sonrisa amplia -->
+            <path d="M51 47 Q60 55 69 47" stroke="#b8734a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <!-- mejillas -->
+            <ellipse cx="48" cy="45" rx="4.5" ry="2.8" fill="#f7a8b8" opacity="0.6"/>
+            <ellipse cx="72" cy="45" rx="4.5" ry="2.8" fill="#f7a8b8" opacity="0.6"/>
+            <!-- corazón de bienestar -->
+            <path d="M98 72 Q100 67 105 72 Q110 67 112 72 Q112 79 105 85 Q98 79 98 72Z" fill="#f7a8b8" opacity="0.75"/>
+          </svg>
+          <div>
+            <p style="font-size:.9rem;color:var(--sage-dark,#3a655a);font-weight:600;margin-bottom:.3rem">No tienes que esperar a estar en crisis</p>
+            <p style="font-size:.86rem;color:var(--text-soft);line-height:1.6;text-align:justify">Iniciar terapia a tiempo te ayuda a desarrollar herramientas para afrontar lo que vives y recuperar tu bienestar emocional.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:.88rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted);margin-bottom:1rem">Podemos ayudarte si estás pasando por:</p>
+        <div class="motivos-list">
+          <div class="motivo-item"><div class="motivo-check">✓</div>Ansiedad, preocupación excesiva o ataques de pánico</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Depresión, tristeza persistente o falta de motivación</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Estrés laboral, agotamiento o sensación de estar rebasado</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Baja autoestima, inseguridad o culpa frecuente</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Duelo, rupturas amorosas o crisis personales</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Experiencias traumáticas o heridas emocionales</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Problemas relacionados con adicciones</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Dificultades para poner límites</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Conflictos familiares, personales o de pareja</div>
+          <div class="motivo-item"><div class="motivo-check">✓</div>Patrones de pensamiento o conducta que quieres cambiar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROPUESTA DE VALOR -->
+<section class="alt" id="propuesta">
+  <div class="container">
+    <span class="eyebrow eyebrow-center">Cómo trabajamos</span>
+    <h2 style="text-align:center">Psicoterapia profesional, clara y con seguimiento clínico</h2>
+    <p style="text-align:center;color:var(--text-soft);max-width:640px;margin:.5rem auto 0;font-size:1rem">En AMEPSIN trabajamos con un enfoque estructurado y basado en herramientas psicológicas con respaldo clínico. La terapia no es solo un espacio para hablar — es un proceso con dirección, objetivos y estrategias concretas.</p>
+    <div class="value-cols">
+      <div class="value-col">
+        <div class="value-num">01</div>
+        <h3>Evaluación inicial</h3>
+        <p>En las primeras sesiones se explora qué está ocurriendo, desde cuándo, qué lo mantiene y qué áreas de tu vida se han visto afectadas.</p>
+      </div>
+      <div class="value-col">
+        <div class="value-num">02</div>
+        <h3>Objetivos terapéuticos</h3>
+        <p>Se definen metas claras para que el proceso tenga dirección y puedas observar avances de forma más concreta.</p>
+      </div>
+      <div class="value-col">
+        <div class="value-num">03</div>
+        <h3>Herramientas prácticas</h3>
+        <p>Trabajamos con estrategias para manejar emociones, modificar pensamientos, cambiar conductas y mejorar tu funcionamiento diario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIADOR ECONÓMICO -->
+<section id="precio" class="dark">
+  <div class="container">
+    <span class="eyebrow">Accesibilidad</span>
+    <h2>Atención psicológica accesible sin perder calidad profesional</h2>
+    <div class="diff-block">
+      <div class="diff-text">
+        <p>Sabemos que muchas personas necesitan iniciar terapia, pero el costo puede convertirse en una barrera. Por eso AMEPSIN ofrece una alternativa accesible de psicoterapia profesional, con <strong style="color:#fff">sesiones desde $350 MXN</strong>.</p>
+        <p>El objetivo es que más adultos puedan recibir atención psicológica seria, ética y con seguimiento, sin que el precio sea el principal obstáculo para comenzar.</p>
+
+        <!-- Ilustración: acompañamiento -->
+        <div style="margin-top:1.8rem;display:flex;align-items:center;gap:18px">
+          <svg width="130" height="110" viewBox="0 0 130 110" fill="none" style="flex-shrink:0">
+            <!-- terapeuta -->
+            <rect x="14" y="56" width="34" height="42" rx="11" fill="rgba(255,255,255,.2)" stroke="rgba(255,255,255,.3)" stroke-width="1.2"/>
+            <path d="M48 66 Q62 62 72 68" stroke="rgba(255,255,255,.25)" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="73" cy="68" r="5" fill="#d4956a"/>
+            <rect x="25" y="48" width="12" height="10" rx="4" fill="#d4956a"/>
+            <ellipse cx="31" cy="36" rx="16" ry="17" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+            <ellipse cx="31" cy="23" rx="16" ry="10" fill="#3d2314"/>
+            <ellipse cx="17" cy="34" rx="6" ry="11" fill="#3d2314"/>
+            <ellipse cx="45" cy="34" rx="6" ry="11" fill="#3d2314"/>
+            <ellipse cx="31" cy="20" rx="8" ry="5" fill="#3d2314"/>
+            <ellipse cx="26" cy="35" rx="2.2" ry="2.8" fill="#3d2314"/>
+            <ellipse cx="36" cy="35" rx="2.2" ry="2.8" fill="#3d2314"/>
+            <circle cx="27" cy="34" r="0.8" fill="white"/>
+            <circle cx="37" cy="34" r="0.8" fill="white"/>
+            <path d="M25 43 Q31 48 37 43" stroke="#b8734a" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+            <ellipse cx="23" cy="42" rx="4" ry="2.5" fill="#f7a8b8" opacity="0.5"/>
+            <ellipse cx="39" cy="42" rx="4" ry="2.5" fill="#f7a8b8" opacity="0.5"/>
+            <!-- paciente -->
+            <rect x="84" y="60" width="32" height="38" rx="11" fill="rgba(255,255,255,.15)" stroke="rgba(255,255,255,.25)" stroke-width="1.2"/>
+            <path d="M84 70 Q72 66 64 70" stroke="rgba(255,255,255,.2)" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="63" cy="70" r="4.5" fill="#f5c5a3"/>
+            <rect x="94" y="52" width="12" height="10" rx="4" fill="#f5c5a3"/>
+            <ellipse cx="100" cy="40" rx="16" ry="17" fill="#f5c5a3" stroke="#e8a882" stroke-width="1"/>
+            <ellipse cx="100" cy="27" rx="16" ry="10" fill="#6b4226"/>
+            <ellipse cx="86" cy="38" rx="6" ry="11" fill="#6b4226"/>
+            <ellipse cx="114" cy="38" rx="6" ry="11" fill="#6b4226"/>
+            <ellipse cx="95" cy="39" rx="2.2" ry="2.8" fill="#5c3d1e"/>
+            <ellipse cx="105" cy="39" rx="2.2" ry="2.8" fill="#5c3d1e"/>
+            <circle cx="96" cy="38" r="0.8" fill="white"/>
+            <circle cx="106" cy="38" r="0.8" fill="white"/>
+            <path d="M94 47 Q100 52 106 47" stroke="#e8a882" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+            <ellipse cx="92" cy="46" rx="4" ry="2.5" fill="#f7a8b8" opacity="0.5"/>
+            <ellipse cx="108" cy="46" rx="4" ry="2.5" fill="#f7a8b8" opacity="0.5"/>
+            <!-- corazón -->
+            <path d="M58 60 Q60 55 65 60 Q70 55 72 60 Q72 67 65 73 Q58 67 58 60Z" fill="rgba(247,168,184,.7)"/>
+          </svg>
+          <p style="font-size:.9rem;color:rgba(255,255,255,.78);line-height:1.65;text-align:justify">Acompañamiento profesional al alcance de más personas, sin renunciar a la calidad ni a la ética.</p>
+        </div>
+        <a href="https://wa.me/522223496269?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20psicoterapia%20para%20adultos%20en%20AMEPSIN.%20Me%20gustar%C3%ADa%20agendar%20una%20cita.%20%C2%BFMe%20pueden%20dar%20horarios%20disponibles%3F" target="_blank" rel="noopener" class="btn btn-wa" style="margin-top:1.5rem">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+          Agendar mi cita por WhatsApp
+        </a>
+      </div>
+      <div class="price-feature">
+        <div class="price-main">$350</div>
+        <div class="price-sub">MXN por sesión</div>
+        <ul class="price-includes">
+          <li>Sesión individual de 50 min</li>
+          <li>Atención presencial o en línea</li>
+          <li>Psicólogo con formación clínica</li>
+          <li>Supervisión profesional del proceso</li>
+          <li>Enfoque terapéutico estructurado</li>
+        </ul>
+        <a href="https://wa.me/522223496269?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20psicoterapia%20para%20adultos%20en%20AMEPSIN.%20Me%20gustar%C3%ADa%20agendar%20una%20cita.%20%C2%BFMe%20pueden%20dar%20horarios%20disponibles%3F" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;justify-content:center">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+          Agendar mi cita
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENFOQUE TCC -->
+<section id="enfoque">
+  <div class="container">
+    <span class="eyebrow">Enfoque terapéutico</span>
+    <h2>Trabajamos principalmente con Terapia Cognitivo-Conductual</h2>
+    <div class="tcc-block">
+      <div class="tcc-visual">
+        <p style="font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--navy);margin-bottom:1.2rem;text-align:center">Modelo TCC</p>
+        <div class="tcc-diagram">
+          <div class="tcc-node t">💭 Pensamientos</div>
+          <div class="tcc-arrow">⟷</div>
+          <div class="tcc-node e">💛 Emociones</div>
+          <div class="tcc-arrow">⟷</div>
+          <div class="tcc-node c">🔄 Conductas</div>
+        </div>
+        <p style="font-size:.82rem;color:var(--text-muted);text-align:center;margin-top:1.2rem;line-height:1.6">Trabajamos la relación entre estos tres elementos para generar cambio real.</p>
+      </div>
+      <div class="tcc-text">
+        <p>La Terapia Cognitivo-Conductual ayuda a <strong>identificar la relación entre pensamientos, emociones y conductas</strong>. A partir de esto, se trabajan estrategias para modificar patrones que generan malestar y desarrollar formas más saludables de afrontar los problemas.</p>
+        <p>Además, la <strong>Terapia Cognitivo-Conductual es el modelo de psicoterapia más estudiado y con mayor respaldo científico.</strong> Por eso, se considera un enfoque claro, estructurado y basado en evidencia para atender una amplia variedad de problemáticas emocionales y conductuales.</p>
+        <div class="tcc-tags">
+          <span class="tcc-tag">Ansiedad</span>
+          <span class="tcc-tag">Depresión</span>
+          <span class="tcc-tag">Estrés</span>
+          <span class="tcc-tag">Baja autoestima</span>
+          <span class="tcc-tag">Duelo</span>
+          <span class="tcc-tag">Estrés postraumático</span>
+          <span class="tcc-tag">TOC</span>
+          <span class="tcc-tag">Dificultades emocionales</span>
+          <span class="tcc-tag">Cambios de hábitos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIMERA SESIÓN -->
+<section class="alt" id="primera-sesion">
+  <div class="container">
+    <span class="eyebrow eyebrow-center">Primera cita</span>
+    <h2 style="text-align:center">¿Qué pasa en la primera sesión?</h2>
+    <p style="text-align:center;color:var(--text-soft);max-width:600px;margin:.5rem auto 0;font-size:1rem">En la primera cita, el psicólogo te escuchará, explorará el motivo por el que buscas terapia y comenzará a identificar qué factores pueden estar relacionados con lo que estás viviendo. <strong>No necesitas llegar sabiendo exactamente qué decir.</strong></p>
+
+    <!-- Ilustración terapeuta y paciente adulto conversando -->
+    <div style="display:flex;justify-content:center;margin:2.5rem 0 0">
+      <svg width="360" height="150" viewBox="0 0 360 150" fill="none">
+        <!-- sillones enfrentados -->
+        <rect x="36" y="104" width="90" height="36" rx="12" fill="var(--sage-light)" stroke="var(--sage)" stroke-width="1.5"/>
+        <rect x="30" y="92" width="20" height="48" rx="8" fill="#d4e9e3" stroke="var(--sage)" stroke-width="1.5"/>
+        <rect x="234" y="104" width="90" height="36" rx="12" fill="var(--sage-light)" stroke="var(--sage)" stroke-width="1.5"/>
+        <rect x="310" y="92" width="20" height="48" rx="8" fill="#d4e9e3" stroke="var(--sage)" stroke-width="1.5"/>
+
+        <!-- planta en medio -->
+        <rect x="176" y="118" width="8" height="22" rx="3" fill="var(--sage)" opacity="0.5"/>
+        <ellipse cx="180" cy="114" rx="14" ry="9" fill="#9FE1CB" opacity="0.8"/>
+        <ellipse cx="172" cy="108" rx="8" ry="6" fill="#5DCAA5" opacity="0.7"/>
+        <ellipse cx="188" cy="108" rx="8" ry="6" fill="#5DCAA5" opacity="0.7"/>
+
+        <!-- TERAPEUTA (izq) -->
+        <rect x="62" y="74" width="40" height="40" rx="12" fill="var(--sage)" stroke="#3a655a" stroke-width="1"/>
+        <!-- brazo con libreta -->
+        <path d="M62 86 Q50 84 46 92" stroke="var(--sage)" stroke-width="6" stroke-linecap="round"/>
+        <rect x="34" y="88" width="14" height="18" rx="3" fill="white" stroke="var(--sage)" stroke-width="1"/>
+        <line x1="37" y1="93" x2="45" y2="93" stroke="var(--sage)" stroke-width="0.8"/>
+        <line x1="37" y1="97" x2="45" y2="97" stroke="var(--sage)" stroke-width="0.8"/>
+        <!-- brazo hacia paciente -->
+        <path d="M102 86 Q116 82 124 88" stroke="var(--sage)" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="125" cy="89" r="5" fill="#d4956a"/>
+        <rect x="76" y="66" width="12" height="10" rx="4" fill="#d4956a"/>
+        <ellipse cx="82" cy="54" rx="18" ry="19" fill="#d4956a" stroke="#b8734a" stroke-width="1"/>
+        <ellipse cx="82" cy="38" rx="18" ry="11" fill="#3d2314"/>
+        <ellipse cx="67" cy="50" rx="6" ry="13" fill="#3d2314"/>
+        <ellipse cx="97" cy="50" rx="6" ry="13" fill="#3d2314"/>
+        <ellipse cx="82" cy="36" rx="9" ry="5" fill="#3d2314"/>
+        <circle cx="82" cy="36" r="3" fill="var(--sage-mid)"/>
+        <ellipse cx="76" cy="53" rx="2.5" ry="3" fill="#3d2314"/>
+        <ellipse cx="88" cy="53" rx="2.5" ry="3" fill="#3d2314"/>
+        <circle cx="77" cy="52" r="0.9" fill="white"/>
+        <circle cx="89" cy="52" r="0.9" fill="white"/>
+        <path d="M75 62 Q82 68 89 62" stroke="#b8734a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="73" cy="60" rx="4" ry="2.5" fill="#f7a8b8" opacity="0.5"/>
+        <ellipse cx="91" cy="60" rx="4" ry="2.5" fill="#f7a8b8" opacity="0.5"/>
+
+        <!-- PACIENTE (der) -->
+        <rect x="258" y="74" width="40" height="40" rx="12" fill="var(--warm)" stroke="#a05f30" stroke-width="1"/>
+        <!-- brazo hacia terapeuta -->
+        <path d="M258 86 Q244 82 236 88" stroke="var(--warm)" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="235" cy="89" r="5" fill="#f5c5a3"/>
+        <rect x="272" y="66" width="12" height="10" rx="4" fill="#f5c5a3"/>
+        <ellipse cx="278" cy="54" rx="18" ry="19" fill="#f5c5a3" stroke="#e8a882" stroke-width="1"/>
+        <ellipse cx="278" cy="38" rx="18" ry="11" fill="#6b4226"/>
+        <ellipse cx="263" cy="50" rx="6" ry="12" fill="#6b4226"/>
+        <ellipse cx="293" cy="50" rx="6" ry="12" fill="#6b4226"/>
+        <ellipse cx="272" cy="53" rx="2.5" ry="3" fill="#5c3d1e"/>
+        <ellipse cx="284" cy="53" rx="2.5" ry="3" fill="#5c3d1e"/>
+        <circle cx="273" cy="52" r="0.9" fill="white"/>
+        <circle cx="285" cy="52" r="0.9" fill="white"/>
+        <path d="M271 62 Q278 68 285 62" stroke="#e8a882" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="269" cy="60" rx="4" ry="2.5" fill="#f7a8b8" opacity="0.5"/>
+        <ellipse cx="287" cy="60" rx="4" ry="2.5" fill="#f7a8b8" opacity="0.5"/>
+
+        <!-- corazón entre ambos -->
+        <path d="M174 64 Q176 59 180 64 Q184 59 186 64 Q186 70 180 75 Q174 70 174 64Z" fill="#f7a8b8" opacity="0.7"/>
+      </svg>
+    </div>
+    <div class="session-steps">
+      <div class="session-step"><div class="step-dot">1</div><div><h3>Escucha activa</h3><p>Hablar de lo que estás viviendo actualmente, sin presión de tener todo claro.</p></div></div>
+      <div class="session-step"><div class="step-dot">2</div><div><h3>Orientación clínica</h3><p>Recibir una primera orientación sobre lo que puede estar ocurriendo.</p></div></div>
+      <div class="session-step"><div class="step-dot">3</div><div><h3>Resolver dudas</h3><p>Preguntar sobre el proceso terapéutico y cómo funciona la atención.</p></div></div>
+      <div class="session-step"><div class="step-dot">4</div><div><h3>Objetivos iniciales</h3><p>Acordar frecuencia y metas iniciales de trabajo para las siguientes sesiones.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA INTERMEDIO -->
+<div class="cta-band">
+  <div class="container">
+    <h2>Comienza tu proceso terapéutico</h2>
+    <p>Si estás atravesando ansiedad, depresión, estrés, duelo, baja autoestima, trauma, problemas relacionados con adicciones o una etapa difícil, puedes agendar una primera cita para recibir orientación profesional.</p>
+    <a href="https://wa.me/522223496269?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20psicoterapia%20para%20adultos%20en%20AMEPSIN.%20Me%20gustar%C3%ADa%20agendar%20una%20cita.%20%C2%BFMe%20pueden%20dar%20horarios%20disponibles%3F" target="_blank" rel="noopener" class="btn btn-wa" style="box-shadow:0 8px 28px rgba(0,0,0,.2);font-size:1.05rem;padding:16px 32px">
+      <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+      Quiero agendar por WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- UBICACIÓN -->
+<section id="ubicacion">
+  <div class="container">
+    <span class="eyebrow eyebrow-center">Ubicación</span>
+    <h2 style="text-align:center">Psicoterapia presencial en Puebla</h2>
+    <p style="text-align:center;color:var(--text-soft);max-width:520px;margin:.5rem auto 0;font-size:1rem">Atención presencial para adultos en el Centro Histórico de Puebla y opción de terapia en línea.</p>
+    <div class="location-grid">
+      <div class="location-info">
+        <div class="loc-row">
+          <div class="loc-icon">📍</div>
+          <div><strong>Dirección</strong><span>3 Poniente 512, interior 10<br>Centro Histórico, Puebla, Pue.</span></div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-icon">🕐</div>
+          <div><strong>Horario</strong><span>Lunes a sábado</span></div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-icon">💻</div>
+          <div><strong>Modalidades</strong><span>Presencial en Puebla y en línea</span></div>
+        </div>
+        <a href="https://wa.me/522223496269?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20psicoterapia%20para%20adultos%20en%20AMEPSIN.%20Me%20gustar%C3%ADa%20agendar%20una%20cita.%20%C2%BFMe%20pueden%20dar%20horarios%20disponibles%3F" target="_blank" rel="noopener" class="btn btn-wa" style="justify-content:center">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+          Agendar cita por WhatsApp
+        </a>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=3+Poniente+512,+Centro,+Puebla&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación AMEPSIN"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="alt" id="faq">
+  <div class="container">
+    <span class="eyebrow eyebrow-center">Preguntas frecuentes</span>
+    <h2 style="text-align:center">Resolvemos tus dudas</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q"><span>¿La terapia es solo para personas con un diagnóstico?</span><span class="faq-icon"></span></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>No. Muchas personas inician terapia porque se sienten rebasadas, confundidas, tristes, ansiosas o porque quieren cambiar patrones personales que les generan malestar. No es necesario tener un diagnóstico para buscar apoyo psicológico.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>¿Cuánto dura una sesión?</span><span class="faq-icon"></span></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>La duración puede variar según el terapeuta y el tipo de atención, pero generalmente una sesión individual dura alrededor de 50 minutos.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>¿Cada cuánto debo ir a terapia?</span><span class="faq-icon"></span></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Lo más común es iniciar con una sesión semanal. Conforme avanza el proceso terapéutico, la frecuencia puede ir espaciándose y ajustarse de acuerdo con tus objetivos, avances y necesidades.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>¿Puedo tomar terapia en línea?</span><span class="faq-icon"></span></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí. Puedes recibir atención en modalidad presencial o en línea, según disponibilidad y tus necesidades.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>¿Atienden ansiedad y depresión?</span><span class="faq-icon"></span></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Sí. En psicoterapia para adultos trabajamos desde la Terapia Cognitivo-Conductual, un enfoque especialmente útil para tratar ansiedad, depresión, estrés, baja autoestima, duelo, crisis personales, experiencias traumáticas y otras dificultades emocionales.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>¿La terapia sustituye una consulta psiquiátrica?</span><span class="faq-icon"></span></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>No necesariamente. Psicoterapia y psiquiatría pueden complementarse. Si durante el proceso se identifica que necesitas valoración psiquiátrica, se te puede orientar para recibir una evaluación adecuada.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>¿Qué pasa si no sé explicar bien lo que siento?</span><span class="faq-icon"></span></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>No hay problema. Parte del proceso terapéutico consiste en ayudarte a ordenar lo que estás viviendo, ponerlo en palabras y comprenderlo con mayor claridad.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="dark" id="contacto" style="text-align:center;padding:5rem 0">
+  <div class="container-sm">
+    <span class="eyebrow" style="display:block;text-align:center">Agenda tu cita</span>
+    <h2>Agenda tu primera cita de psicoterapia para adultos</h2>
+    <p style="color:rgba(255,255,255,.8);font-size:1.05rem;max-width:520px;margin:1rem auto 2rem;line-height:1.75">Da el primer paso para trabajar lo que estás viviendo con acompañamiento profesional. Atención en Puebla o en modalidad online.</p>
+    <a href="https://wa.me/522223496269?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20psicoterapia%20para%20adultos%20en%20AMEPSIN.%20Me%20gustar%C3%ADa%20agendar%20una%20cita.%20%C2%BFMe%20pueden%20dar%20horarios%20disponibles%3F" target="_blank" rel="noopener" class="btn btn-wa" style="font-size:1.05rem;padding:16px 36px;box-shadow:0 8px 28px rgba(37,211,102,.4)">
+      <svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+      Agendar cita por WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> AMEPSIN — Asociación Mexicana de Psicología y Neurociencias. Todos los derechos reservados.</p>
+    <p>3 Poniente 512, interior 10, Centro Histórico, Puebla · <a href="mailto:psicoterapia@amepsin.com.mx">psicoterapia@amepsin.com.mx</a></p>
+    <p style="margin-top:10px"><a href="../aviso-de-privacidad.html" style="color:rgba(255,255,255,.85);text-decoration:underline">Aviso de Privacidad</a></p>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<div class="floating">
+  <div class="float-item">
+    <a href="https://wa.me/522223496269?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20psicoterapia%20para%20adultos%20en%20AMEPSIN.%20Me%20gustar%C3%ADa%20agendar%20una%20cita.%20%C2%BFMe%20pueden%20dar%20horarios%20disponibles%3F" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="#fff"><path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16c0 3.5 1.128 6.744 3.046 9.376L1.054 31.32l6.149-1.966C9.732 31.018 12.748 32 16.004 32 24.83 32 32 24.826 32 16S24.83 0 16.004 0zm9.314 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.728-6.724-7.964-7.034-.226-.31-1.9-2.53-1.9-4.826s1.166-3.412 1.636-3.892c.386-.394.024-.638 1.146-.638.362 0 .686.018.978.032.47.02.706.048.418 1.7.358 1.84 1.216 4.144 1.298 4.318.084.174.054.45-.054.694-.082.244-.394.45-.598.602-.204.152-.366.244-.516.488-.15.244-.366.45-.146.984.22.534 1.198 1.974 2.572 3.196 1.77 1.572 3.226 2.078 3.762 2.298.402.166.882.126 1.176-.184.374-.394.836-1.048 1.306-1.692.336-.464.762-.526 1.208-.354.456.166 2.882 1.358 3.376 1.604.494.246.822.366.942.572.118.21.118 1.202-.268 2.294z"/></svg>
+    </a>
+    <span class="float-label">WhatsApp</span>
+  </div>
+  <div class="float-item">
+    <a href="tel:+522223496269" class="float-btn float-call" aria-label="Llamar">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+    </a>
+    <span class="float-label">Llamadas</span>
+  </div>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-q').addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
