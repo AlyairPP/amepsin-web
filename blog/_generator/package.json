@@ -1,0 +1,9 @@
+{
+  "name": "amepsin-blog-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Genera las paginas del blog de AMEPSIN a partir de archivos markdown.",
+  "dependencies": {
+    "marked": "4.3.0"
+  }
+}
