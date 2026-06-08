@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18194189906"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18194189906');
+</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18194189906"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18194189906');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AMEPSIN Salud Mental — Psicoterapia en Puebla</title>
@@ -1060,6 +1075,18 @@
     if(e.key === 'ArrowLeft') prevImg();
   });
 </script>
-
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a || !a.href) return;
+    var href = a.href.toLowerCase();
+    if (href.indexOf('wa.me') !== -1 || href.indexOf('api.whatsapp.com') !== -1 || href.indexOf('whatsapp.com/send') !== -1) {
+      gtag('event', 'conversion', {'send_to': 'AW-18194189906/YRn7CNXz77ocENKc1eND'});
+    }
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'conversion', {'send_to': 'AW-18194189906/L5STCNjz77ocENKc1eND'});
+    }
+  }, true);
+</script>
 </body>
 </html>
